@@ -1,86 +1,287 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0f2d3d" />
-  <meta name="description" content="Md Shifatul Ahsan Apurba is a PhD Candidate in Biomedical Health Informatics and Data Science at the University of Alabama at Birmingham, working on generative AI, medical imaging, CT reconstruction, and predictive modeling." />
-  <meta name="keywords" content="Md Shifatul Ahsan Apurba, Apurba, UAB, biomedical informatics, medical imaging, generative AI, CT reconstruction, MeanFlow, reinforcement learning, radiomics, machine learning" />
-  <meta name="author" content="Md Shifatul Ahsan Apurba" />
-  <meta property="og:title" content="Md Shifatul Ahsan Apurba | Biomedical AI Researcher" />
-  <meta property="og:description" content="PhD Candidate at UAB working on generative AI for medical imaging, CT reconstruction, representation learning, and predictive modeling." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://apurba-online.github.io/me/" />
-  <meta property="og:image" content="https://avatars.githubusercontent.com/u/15920359?v=4" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b35">
+  <meta name="description" content="Md Shifatul Ahsan Apurba is a PhD Candidate at the University of Alabama at Birmingham working on generative AI, biomedical imaging, CT reconstruction, representation learning, and predictive modeling.">
+  <meta name="keywords" content="Md Shifatul Ahsan Apurba, Apurba, UAB, biomedical informatics, generative AI, medical imaging, CT reconstruction, MeanFlow, radiomics, machine learning">
+  <meta name="author" content="Md Shifatul Ahsan Apurba">
+  <meta property="og:title" content="Md Shifatul Ahsan Apurba | Biomedical AI Researcher">
+  <meta property="og:description" content="PhD Candidate at UAB developing generative and predictive AI methods for biomedical imaging and clinical modeling.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://apurba-online.github.io/me/">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/15920359?v=4">
+  <link rel="icon" type="image/png" href="assets/img/root/favicon.png">
   <title>Md Shifatul Ahsan Apurba | Biomedical AI Researcher</title>
   <style>
-    :root{--ink:#17242c;--muted:#5f6d75;--paper:#fff;--soft:#f5f8f8;--line:#dce4e5;--navy:#0f2d3d;--navy2:#173f50;--green:#1e6c5b;--greenSoft:#e9f3f0;--gold:#b58b3a;--max:1120px;--radius:14px;--shadow:0 14px 34px rgba(15,45,61,.08)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--paper);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}a{color:var(--green);text-decoration-thickness:1px;text-underline-offset:3px}a:hover{color:var(--navy)}img{max-width:100%;display:block}.container{width:min(var(--max),calc(100% - 40px));margin:0 auto}.site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);border-bottom:1px solid rgba(220,228,229,.92);backdrop-filter:blur(12px)}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{text-decoration:none;color:var(--navy);font-weight:800;letter-spacing:-.02em;font-size:1rem;white-space:nowrap}.nav-links{display:flex;align-items:center;gap:22px}.nav-links a{color:#33464f;text-decoration:none;font-size:.92rem;font-weight:650}.nav-links a:hover{color:var(--green)}.nav-cv{border:1px solid var(--navy);border-radius:8px;padding:8px 12px;color:var(--navy)!important}.menu-button{display:none;border:1px solid var(--line);background:#fff;border-radius:8px;padding:7px 10px;font:inherit}.hero{background:radial-gradient(circle at 90% 12%,rgba(30,108,91,.12),transparent 30%),linear-gradient(180deg,#fbfdfd 0%,#fff 100%);border-bottom:1px solid var(--line)}.hero-grid{min-height:640px;display:grid;grid-template-columns:minmax(0,1.55fr) minmax(260px,.72fr);gap:64px;align-items:center;padding:88px 0}.eyebrow{margin:0 0 14px;color:var(--green);font-size:.82rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em}h1,h2,h3{color:var(--navy);line-height:1.16;margin-top:0}h1{font-size:clamp(2.7rem,5vw,4.75rem);letter-spacing:-.045em;margin-bottom:20px;max-width:870px}.hero-role{font-size:clamp(1.17rem,2vw,1.45rem);font-weight:750;color:#2c4652;margin:0 0 18px}.hero-copy{max-width:780px;font-size:1.07rem;color:var(--muted);margin-bottom:28px}.hero-actions{display:flex;flex-wrap:wrap;gap:11px;margin:28px 0 24px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border-radius:9px;font-weight:750;text-decoration:none;border:1px solid var(--navy);transition:.15s ease}.button.primary{color:#fff;background:var(--navy)}.button.primary:hover{background:var(--navy2);color:#fff;transform:translateY(-1px)}.button.secondary{color:var(--navy);background:#fff}.button.secondary:hover{border-color:var(--green);color:var(--green);transform:translateY(-1px)}.hero-links{display:flex;flex-wrap:wrap;gap:16px;font-size:.94rem}.hero-links a{color:#41545e;text-decoration:none;font-weight:650}.hero-links a:hover{color:var(--green)}.portrait-wrap{position:relative;width:min(100%,340px);justify-self:end}.portrait-wrap:before{content:"";position:absolute;inset:18px -18px -18px 18px;border-radius:22px;background:var(--greenSoft);border:1px solid #d6e6e2}.portrait{position:relative;width:100%;aspect-ratio:1/1.08;object-fit:cover;border-radius:22px;border:1px solid var(--line);box-shadow:var(--shadow);background:var(--soft)}.location{position:relative;display:inline-block;margin-top:18px;color:var(--muted);font-size:.92rem}section{padding:86px 0}section.alt{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.section-head{display:grid;grid-template-columns:230px 1fr;gap:36px;margin-bottom:40px;align-items:start}.section-kicker{color:var(--green);font-size:.79rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:5px 0 0}.section-head h2{font-size:clamp(2rem,3.2vw,3rem);letter-spacing:-.035em;margin-bottom:12px}.section-head p{color:var(--muted);margin:0;max-width:800px}.about-grid{display:grid;grid-template-columns:1.55fr .85fr;gap:52px;align-items:start}.about-text p{margin-top:0;color:#3f5059;font-size:1.02rem}.facts{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff}.fact{padding:17px 19px;border-bottom:1px solid var(--line)}.fact:last-child{border-bottom:0}.fact span{display:block;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}.fact strong{color:var(--navy);font-size:.97rem}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:25px;box-shadow:0 8px 25px rgba(15,45,61,.035)}.alt .card{box-shadow:none}.card-index{color:var(--gold);font-weight:850;font-size:.78rem;letter-spacing:.1em;margin-bottom:14px}.card h3{font-size:1.18rem;margin-bottom:10px}.card p{color:var(--muted);margin:0;font-size:.95rem}.pub-list{border-top:1px solid var(--line)}.pub{display:grid;grid-template-columns:95px 1fr 110px;gap:24px;padding:25px 0;border-bottom:1px solid var(--line);align-items:start}.pub-year{font-size:.88rem;font-weight:800;color:var(--green)}.pub-title{font-weight:800;color:var(--navy);margin-bottom:5px;line-height:1.38}.pub-meta{color:var(--muted);font-size:.92rem}.pub-link{justify-self:end;white-space:nowrap;font-size:.88rem;font-weight:750;text-decoration:none}.badge{display:inline-block;margin-left:7px;padding:2px 7px;border-radius:999px;background:var(--greenSoft);color:var(--green);font-size:.7rem;font-weight:800;vertical-align:1px}.timeline{position:relative;border-left:2px solid #dce6e4;margin-left:8px}.timeline-item{position:relative;padding:0 0 34px 32px}.timeline-item:last-child{padding-bottom:0}.timeline-item:before{content:"";width:11px;height:11px;border-radius:50%;background:var(--green);border:3px solid #fff;box-shadow:0 0 0 1px var(--green);position:absolute;left:-7px;top:5px}.timeline-date{color:var(--green);font-weight:800;font-size:.81rem;margin-bottom:4px}.timeline-title{color:var(--navy);font-weight:850;font-size:1.08rem}.timeline-org{color:#3f525c;font-weight:650;margin-bottom:8px}.timeline-item p{color:var(--muted);margin:0;max-width:850px;font-size:.95rem}.education-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.degree{padding:24px;border:1px solid var(--line);border-radius:var(--radius);background:#fff}.degree-year{color:var(--green);font-size:.82rem;font-weight:800;margin-bottom:12px}.degree h3{font-size:1.1rem;margin-bottom:8px}.degree p{color:var(--muted);margin:0;font-size:.93rem}.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.skill-group{border:1px solid var(--line);border-radius:var(--radius);padding:22px;background:#fff}.skill-group h3{font-size:1rem;margin-bottom:14px}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{border:1px solid #d7e2e1;border-radius:999px;background:#fbfdfd;padding:6px 10px;color:#42555e;font-size:.82rem;font-weight:650}.project{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:start;border:1px solid var(--line);border-radius:var(--radius);background:#fff;padding:25px}.project h3{margin-bottom:8px;font-size:1.16rem}.project p{margin:0;color:var(--muted);max-width:780px}.project a{white-space:nowrap;font-weight:750;text-decoration:none}.leadership-list{display:grid;gap:14px}.leadership-item{display:grid;grid-template-columns:210px 1fr;gap:24px;padding:20px 0;border-bottom:1px solid var(--line)}.leadership-item:first-child{border-top:1px solid var(--line)}.leadership-item strong{color:var(--navy)}.leadership-item p{margin:0;color:var(--muted)}.contact-panel{background:var(--navy);color:#fff;border-radius:20px;padding:46px;display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:center}.contact-panel h2{color:#fff;font-size:clamp(2rem,3vw,2.8rem);margin-bottom:12px}.contact-panel p{color:#d3e0e4;margin:0;max-width:680px}.contact-links{display:grid;gap:9px;justify-items:start}.contact-links a{color:#fff;font-weight:750;text-decoration:none}.contact-links a:hover{color:#b8ddd2}footer{padding:30px 0 42px;color:var(--muted);font-size:.86rem}.footer-row{display:flex;justify-content:space-between;gap:24px;border-top:1px solid var(--line);padding-top:24px}@media(max-width:900px){.hero-grid{grid-template-columns:1fr;min-height:auto;gap:44px;padding:72px 0}.portrait-wrap{justify-self:start;width:290px}.section-head{grid-template-columns:1fr;gap:8px}.about-grid,.contact-panel{grid-template-columns:1fr}.cards,.education-grid{grid-template-columns:1fr}.skills-grid{grid-template-columns:1fr}.nav-links{position:absolute;left:20px;right:20px;top:65px;display:none;padding:15px;border:1px solid var(--line);border-radius:12px;background:#fff;box-shadow:var(--shadow);flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a{padding:10px}.menu-button{display:inline-block}.pub{grid-template-columns:70px 1fr}.pub-link{grid-column:2;justify-self:start}}@media(max-width:620px){.container{width:min(var(--max),calc(100% - 28px))}section{padding:66px 0}h1{font-size:2.7rem}.hero-grid{padding:58px 0 68px}.portrait-wrap{width:245px}.pub{grid-template-columns:1fr;gap:7px}.pub-link{grid-column:auto}.leadership-item{grid-template-columns:1fr;gap:6px}.project{grid-template-columns:1fr}.contact-panel{padding:30px}.footer-row{flex-direction:column;gap:8px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+    :root{
+      --ink:#152521;--muted:#64716d;--paper:#ffffff;--wash:#f6f8f7;--line:#dfe6e3;
+      --green:#123b35;--green2:#1e6255;--green3:#e8f1ee;--gold:#a9823d;--blue:#294f68;
+      --max:1160px;--radius:16px;--shadow:0 18px 50px rgba(18,59,53,.08)
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+    a{color:var(--green2);text-underline-offset:3px} a:hover{color:var(--green)} img{display:block;max-width:100%}
+    .container{width:min(var(--max),calc(100% - 42px));margin:0 auto}
+    .topbar{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(14px);border-bottom:1px solid rgba(223,230,227,.9)}
+    .nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{color:var(--green);text-decoration:none;font-weight:800;letter-spacing:-.025em;font-size:.98rem;white-space:nowrap}
+    .navlinks{display:flex;align-items:center;gap:24px}.navlinks a{color:#41514c;text-decoration:none;font-weight:650;font-size:.9rem}.navlinks a:hover{color:var(--green2)}
+    .navlinks .cv{color:#fff;background:var(--green);padding:8px 13px;border-radius:8px}.navlinks .cv:hover{background:var(--green2);color:#fff}
+    .menu{display:none;border:1px solid var(--line);background:#fff;border-radius:8px;padding:7px 10px;font:inherit;color:var(--green)}
+
+    .hero{border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fbfcfc 0%,#fff 100%)}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(260px,.58fr);gap:78px;align-items:center;padding:92px 0 84px;min-height:620px}
+    .eyebrow{margin:0 0 13px;color:var(--green2);text-transform:uppercase;letter-spacing:.13em;font-weight:800;font-size:.77rem}
+    h1,h2,h3{color:var(--green);margin-top:0;line-height:1.15}h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(3.05rem,6vw,5.55rem);font-weight:600;letter-spacing:-.048em;margin-bottom:18px}
+    .role{font-size:clamp(1.15rem,2.1vw,1.48rem);font-weight:750;color:#304944;margin:0 0 18px;max-width:850px}
+    .statement{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.28rem,2.3vw,1.7rem);line-height:1.45;color:#344944;max-width:820px;margin:26px 0}
+    .subcopy{font-size:1rem;color:var(--muted);max-width:800px;margin:0 0 28px}
+    .actions,.profile-links{display:flex;flex-wrap:wrap;gap:10px}.actions{margin-bottom:22px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:43px;padding:9px 15px;border-radius:9px;border:1px solid var(--green);text-decoration:none;font-weight:750;font-size:.92rem}.btn.primary{background:var(--green);color:#fff}.btn.primary:hover{background:var(--green2);color:#fff}.btn.secondary{background:#fff;color:var(--green)}
+    .profile-links{gap:17px}.profile-links a{font-size:.9rem;color:#53635e;text-decoration:none;font-weight:650}.profile-links a:hover{color:var(--green2)}
+    .portrait-wrap{justify-self:end;width:min(100%,315px)}.portrait{width:100%;aspect-ratio:1/1.12;object-fit:cover;border-radius:20px;border:1px solid var(--line);box-shadow:var(--shadow);background:var(--wash)}.portrait-note{margin:13px 0 0;color:var(--muted);font-size:.84rem;text-align:center}
+
+    section{padding:86px 0}.soft{background:var(--wash);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .head{display:grid;grid-template-columns:190px 1fr;gap:42px;align-items:start;margin-bottom:42px}.kicker{margin:5px 0 0;color:var(--green2);text-transform:uppercase;letter-spacing:.13em;font-weight:850;font-size:.75rem}.head h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.15rem,4vw,3.35rem);font-weight:600;letter-spacing:-.035em;margin-bottom:12px}.head p{color:var(--muted);max-width:820px;margin:0}
+
+    .interests{display:flex;flex-wrap:wrap;gap:10px}.interest{padding:8px 12px;background:#fff;border:1px solid var(--line);border-radius:999px;color:#42534e;font-size:.88rem;font-weight:650}
+
+    .featured{display:grid;grid-template-columns:1.05fr .95fr;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff;box-shadow:var(--shadow)}
+    .featured-copy{padding:42px}.label{display:inline-block;color:var(--green2);font-size:.72rem;font-weight:850;text-transform:uppercase;letter-spacing:.12em;margin-bottom:15px}.featured h3{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.7rem,3vw,2.5rem);font-weight:600;margin-bottom:13px}.featured-copy p{color:var(--muted);margin:0 0 18px}.project-meta{display:flex;flex-wrap:wrap;gap:8px;margin:19px 0}.pill{font-size:.78rem;font-weight:750;color:var(--green);background:var(--green3);padding:5px 9px;border-radius:999px}.project-links{display:flex;flex-wrap:wrap;gap:15px;margin-top:24px}.project-links a{font-weight:750;text-decoration:none;font-size:.9rem}
+    .diagram{background:linear-gradient(145deg,#123b35 0%,#1b5148 100%);padding:35px;display:flex;align-items:center;justify-content:center}.pipeline{width:100%;max-width:450px}.pipe-title{color:#dcece7;text-transform:uppercase;letter-spacing:.11em;font-size:.7rem;font-weight:800;margin-bottom:18px}.pipe-row{display:grid;grid-template-columns:1fr 28px 1fr;gap:8px;align-items:center;margin-bottom:11px}.pipe-box{background:rgba(255,255,255,.96);border-radius:11px;padding:14px 12px;min-height:68px}.pipe-box strong{display:block;color:var(--green);font-size:.88rem;margin-bottom:3px}.pipe-box span{display:block;color:#65746f;font-size:.72rem;line-height:1.35}.arrow{color:#c5ded7;text-align:center;font-size:1.25rem}.pipe-full{background:#e7f0ed;border-radius:11px;padding:14px;margin-top:11px}.pipe-full strong{color:var(--green);display:block;font-size:.88rem}.pipe-full span{color:#5f716b;font-size:.73rem}.pipe-foot{color:#bcd6cf;font-size:.72rem;margin-top:15px;line-height:1.5}
+
+    .directions{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}.direction{padding:24px;border-top:3px solid var(--green2);background:#fff;border-radius:0 0 12px 12px;border-left:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.direction h3{font-size:1.04rem;margin-bottom:8px}.direction p{color:var(--muted);margin:0;font-size:.91rem}
+
+    .pub-list{border-top:1px solid var(--line)}.pub{display:grid;grid-template-columns:78px 1fr 110px;gap:25px;padding:27px 0;border-bottom:1px solid var(--line);align-items:start}.pub-year{font-size:.82rem;font-weight:850;color:var(--green2);padding-top:3px}.pub-title{font-family:Georgia,"Times New Roman",serif;color:var(--green);font-weight:700;font-size:1.08rem;line-height:1.42;margin-bottom:5px}.pub-authors{font-size:.9rem;color:#465752;margin-bottom:4px}.pub-venue{font-size:.86rem;color:var(--muted)}.pub-link{justify-self:end;font-size:.84rem;font-weight:800;text-decoration:none;white-space:nowrap}.status{display:inline-block;font-family:Inter,ui-sans-serif,sans-serif;margin-left:6px;padding:2px 7px;border-radius:999px;background:var(--green3);color:var(--green2);font-size:.64rem;font-weight:850;vertical-align:2px;letter-spacing:.03em}
+
+    .news{display:grid;grid-template-columns:repeat(2,1fr);gap:0 34px}.news-item{display:grid;grid-template-columns:88px 1fr;gap:16px;padding:20px 0;border-top:1px solid var(--line)}.news-date{color:var(--green2);font-size:.78rem;font-weight:850}.news-item p{margin:0;color:#4f605b;font-size:.92rem}.news-item strong{color:var(--green)}
+
+    .experience-columns{display:grid;grid-template-columns:1fr 1fr;gap:50px}.exp-group h3{font-family:Georgia,"Times New Roman",serif;font-size:1.55rem;font-weight:600;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:5px}.exp{padding:18px 0;border-bottom:1px solid var(--line)}.exp:last-child{border-bottom:0}.exp-date{color:var(--green2);font-size:.76rem;font-weight:850;margin-bottom:3px}.exp-title{color:var(--green);font-weight:800}.exp-org{color:#435650;font-size:.89rem;font-weight:650;margin:2px 0 7px}.exp p{color:var(--muted);margin:0;font-size:.88rem}
+
+    .about-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:55px;align-items:start}.about-copy p{color:#465752;margin-top:0}.facts{border:1px solid var(--line);border-radius:14px;background:#fff;overflow:hidden}.fact{padding:16px 18px;border-bottom:1px solid var(--line)}.fact:last-child{border-bottom:0}.fact span{display:block;color:var(--muted);font-size:.69rem;text-transform:uppercase;letter-spacing:.08em;font-weight:850;margin-bottom:3px}.fact strong{color:var(--green);font-size:.92rem}.education{display:grid;gap:14px;margin-top:20px}.edu{display:grid;grid-template-columns:95px 1fr;gap:18px}.edu-year{color:var(--green2);font-size:.79rem;font-weight:850}.edu strong{color:var(--green);display:block}.edu span{color:var(--muted);font-size:.88rem}
+
+    .methods{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}.method{padding:22px 0;border-top:2px solid var(--green)}.method h3{font-size:.96rem;margin-bottom:9px}.method p{margin:0;color:var(--muted);font-size:.88rem}
+
+    .contact{background:var(--green);color:#fff}.contact .head{margin-bottom:0}.contact .kicker{color:#abd3c8}.contact h2{color:#fff}.contact .head p{color:#d3e5e0}.contact-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}.contact .btn.primary{background:#fff;color:var(--green);border-color:#fff}.contact .btn.secondary{background:transparent;color:#fff;border-color:#87b3a8}.contact .btn.secondary:hover{background:rgba(255,255,255,.08)}
+    footer{padding:28px 0 36px;color:var(--muted);font-size:.82rem}.foot{display:flex;justify-content:space-between;gap:20px}
+
+    @media(max-width:940px){.hero-grid{grid-template-columns:1fr;min-height:auto;gap:40px;padding:70px 0}.portrait-wrap{justify-self:start;width:250px}.head{grid-template-columns:1fr;gap:7px}.featured{grid-template-columns:1fr}.directions{grid-template-columns:1fr}.experience-columns{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}.methods{grid-template-columns:1fr}.news{grid-template-columns:1fr}.navlinks{position:absolute;top:64px;left:20px;right:20px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:12px;padding:12px;display:none;flex-direction:column;align-items:stretch;gap:0}.navlinks.open{display:flex}.navlinks a{padding:9px 10px}.menu{display:block}.pub{grid-template-columns:65px 1fr}.pub-link{grid-column:2;justify-self:start}}
+    @media(max-width:620px){.container{width:min(var(--max),calc(100% - 28px))}section{padding:66px 0}.hero-grid{padding:58px 0 64px}h1{font-size:3.05rem}.statement{font-size:1.25rem}.featured-copy,.diagram{padding:26px}.pub{grid-template-columns:1fr;gap:7px}.pub-link{grid-column:auto}.news-item{grid-template-columns:72px 1fr}.foot{flex-direction:column;gap:6px}.edu{grid-template-columns:75px 1fr}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="#top">Md Shifatul Ahsan Apurba</a>
-      <button class="menu-button" aria-expanded="false" aria-controls="nav-links">Menu</button>
-      <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
-        <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a><a class="nav-cv" href="https://scholar.google.com/citations?user=pu5cJSgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
-      </nav>
-    </div>
-  </header>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#top">Md Shifatul Ahsan Apurba</a>
+    <button class="menu" aria-expanded="false" aria-controls="navlinks">Menu</button>
+    <nav class="navlinks" id="navlinks" aria-label="Primary navigation">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#news">News</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="cv" href="cv.html" target="_blank" rel="noopener">CV ↗</a>
+    </nav>
+  </div>
+</header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Biomedical AI · Medical Imaging · Generative Models</p>
-          <h1>Md Shifatul Ahsan Apurba</h1>
-          <p class="hero-role">PhD Candidate in Biomedical Health Informatics &amp; Data Science at the University of Alabama at Birmingham</p>
-          <p class="hero-copy">I develop generative and predictive AI methods for biomedical imaging, with a current focus on CT image reconstruction, representation learning, radiomic reliability, and region-adaptive learning. My work spans deep generative models, MeanFlow and flow-based methods, reinforcement learning, and multimodal biomedical AI.</p>
-          <div class="hero-actions"><a class="button primary" href="#research">View Research</a><a class="button secondary" href="https://scholar.google.com/citations?user=pu5cJSgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></div>
-          <div class="hero-links" aria-label="Professional profiles"><a href="https://scholar.google.com/citations?user=pu5cJSgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar ↗</a><a href="https://github.com/apurba-online" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/mapurba" target="_blank" rel="noopener">LinkedIn ↗</a><a href="mailto:mapurba@uab.edu">mapurba@uab.edu</a></div>
+<main id="top">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Biomedical AI · Generative Medical Imaging</p>
+        <h1>Md Shifatul Ahsan Apurba</h1>
+        <p class="role">PhD Candidate in Biomedical Health Informatics &amp; Data Science · University of Alabama at Birmingham</p>
+        <p class="statement">Developing generative and predictive AI methods for reliable medical imaging and clinical modeling.</p>
+        <p class="subcopy">My research focuses on CT image reconstruction, generative flow-based models, region-adaptive learning, representation learning, radiomic reliability, and multimodal biomedical AI.</p>
+        <div class="actions">
+          <a class="btn primary" href="#research">Research</a>
+          <a class="btn secondary" href="#publications">Publications</a>
+          <a class="btn secondary" href="cv.html" target="_blank" rel="noopener">View CV ↗</a>
         </div>
-        <div class="portrait-wrap"><img class="portrait" src="https://avatars.githubusercontent.com/u/15920359?v=4" alt="Md Shifatul Ahsan Apurba" /><span class="location">Birmingham, Alabama, USA</span></div>
+        <div class="profile-links">
+          <a href="https://scholar.google.com/citations?user=pu5cJSgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar ↗</a>
+          <a href="https://github.com/apurba-online" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/mapurba" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="mailto:mapurba@uab.edu">mapurba@uab.edu</a>
+        </div>
       </div>
-    </section>
+      <div class="portrait-wrap">
+        <img class="portrait" src="https://avatars.githubusercontent.com/u/15920359?v=4" alt="Md Shifatul Ahsan Apurba">
+        <p class="portrait-note">Birmingham, Alabama · USA</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="about"><div class="container">
-      <div class="section-head"><p class="section-kicker">About</p><div><h2>Research at the intersection of AI and biomedical imaging.</h2><p>My academic work focuses on building reliable learning systems for medical imaging while preserving clinically meaningful anatomy, texture, and quantitative imaging information.</p></div></div>
-      <div class="about-grid"><div class="about-text"><p>I am a PhD Candidate in Biomedical Health Informatics and Data Science at UAB. My current research investigates generative AI methods for CT reconstruction and standardization, including conditional flow-based models and spatially adaptive refinement strategies.</p><p>I am especially interested in methods that connect image generation with downstream biomedical utility: representation learning, radiomics, multimodal prediction, and clinically meaningful evaluation. Alongside research, I bring prior industry experience in software engineering, enterprise systems, automation, and telecommunications.</p><p>I welcome research collaborations and opportunities involving generative AI, medical imaging, biomedical informatics, machine learning, and applied data science.</p></div><div class="facts"><div class="fact"><span>Current role</span><strong>Graduate Research Assistant, UAB</strong></div><div class="fact"><span>PhD program</span><strong>Biomedical Health Informatics &amp; Data Science</strong></div><div class="fact"><span>Primary focus</span><strong>Generative AI for Medical Imaging</strong></div><div class="fact"><span>Current location</span><strong>Birmingham, Alabama</strong></div></div></div>
-    </div></section>
+  <section id="research">
+    <div class="container">
+      <div class="head">
+        <p class="kicker">Research</p>
+        <div>
+          <h2>Reliable AI for biomedical imaging.</h2>
+          <p>I am interested in methods that improve image reconstruction and representation while preserving clinically meaningful anatomy, texture, and quantitative imaging information.</p>
+        </div>
+      </div>
+      <div class="interests" aria-label="Research interests">
+        <span class="interest">Generative Medical Imaging</span>
+        <span class="interest">CT Reconstruction</span>
+        <span class="interest">Flow Matching &amp; MeanFlow</span>
+        <span class="interest">Representation Learning</span>
+        <span class="interest">Reinforcement Learning</span>
+        <span class="interest">Radiomics</span>
+        <span class="interest">Multimodal Biomedical AI</span>
+        <span class="interest">Predictive Modeling</span>
+      </div>
 
-    <section id="research" class="alt"><div class="container">
-      <div class="section-head"><p class="section-kicker">Research</p><div><h2>Current research directions</h2><p>I work on learning systems that reconstruct, represent, and analyze biomedical images while emphasizing structural and quantitative fidelity.</p></div></div>
-      <div class="cards"><article class="card"><div class="card-index">01 · GENERATIVE IMAGING</div><h3>CT Reconstruction &amp; Standardization</h3><p>Conditional generative models for reducing protocol- and reconstruction-related variability in CT while preserving anatomy, texture, and radiomic information.</p></article><article class="card"><div class="card-index">02 · ADAPTIVE LEARNING</div><h3>Region-Adaptive Refinement</h3><p>Spatially selective learning and reinforcement-learning policies that identify difficult regions, allocate refinement effort, and avoid unnecessary modification.</p></article><article class="card"><div class="card-index">03 · REPRESENTATION</div><h3>Biomedical Representation &amp; Prediction</h3><p>Image representations for downstream clinical modeling, including multimodal fusion, predictive models, radiomics, and vision-language learning.</p></article></div>
-    </div></section>
+      <div style="height:40px"></div>
+      <article class="featured">
+        <div class="featured-copy">
+          <span class="label">Featured Research · ICIBM 2026 Oral</span>
+          <h3>RA-CMF: Region-Adaptive Conditional MeanFlow for CT Image Reconstruction</h3>
+          <p>RA-CMF combines a conditional MeanFlow reconstruction backbone with region-adaptive refinement so that additional modeling effort is concentrated on spatial regions that are more difficult to reconstruct.</p>
+          <p>The project is motivated by a practical biomedical imaging problem: improving reconstruction consistency without indiscriminately modifying the entire CT image or sacrificing clinically relevant local information.</p>
+          <div class="project-meta"><span class="pill">Conditional MeanFlow</span><span class="pill">Region-Adaptive Learning</span><span class="pill">CT</span><span class="pill">Radiomics</span></div>
+          <div class="project-links">
+            <a href="https://arxiv.org/abs/2605.00901" target="_blank" rel="noopener">Paper / arXiv ↗</a>
+            <a href="#publications">Citation</a>
+          </div>
+        </div>
+        <div class="diagram" aria-label="RA-CMF conceptual pipeline">
+          <div class="pipeline">
+            <div class="pipe-title">RA-CMF conceptual pipeline</div>
+            <div class="pipe-row">
+              <div class="pipe-box"><strong>Source CT</strong><span>Input reconstruction domain</span></div>
+              <div class="arrow">→</div>
+              <div class="pipe-box"><strong>Conditional MeanFlow</strong><span>Global reconstruction trajectory</span></div>
+            </div>
+            <div class="pipe-row">
+              <div class="pipe-box"><strong>Regional assessment</strong><span>Identify difficult spatial regions</span></div>
+              <div class="arrow">→</div>
+              <div class="pipe-box"><strong>Adaptive refinement</strong><span>Targeted local correction</span></div>
+            </div>
+            <div class="pipe-full"><strong>Reconstructed CT</strong><span>Goal: strong global fidelity with selective regional refinement</span></div>
+            <div class="pipe-foot">The diagram is a high-level public summary of the published RA-CMF framework.</div>
+          </div>
+        </div>
+      </article>
 
-    <section id="publications"><div class="container">
-      <div class="section-head"><p class="section-kicker">Publications</p><div><h2>Selected research and publications</h2><p>Selected peer-reviewed and preprint work across biomedical AI, medical informatics, machine learning, and computer vision.</p></div></div>
+      <div class="directions">
+        <article class="direction"><h3>Generative reconstruction</h3><p>Flow-based and generative modeling for CT reconstruction and protocol-related image variability.</p></article>
+        <article class="direction"><h3>Image representation</h3><p>Learning representations from medical images for downstream clinical prediction and multimodal modeling.</p></article>
+        <article class="direction"><h3>Clinical reliability</h3><p>Evaluating image quality together with structural fidelity, radiomic consistency, and downstream biomedical utility.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications" class="soft">
+    <div class="container">
+      <div class="head">
+        <p class="kicker">Publications</p>
+        <div><h2>Selected publications.</h2><p>Peer-reviewed and preprint work across biomedical AI, medical informatics, computer vision, and data science.</p></div>
+      </div>
       <div class="pub-list">
-        <article class="pub"><div class="pub-year">2026</div><div><div class="pub-title">RA-CMF: Region-Adaptive Conditional MeanFlow for CT Image Reconstruction <span class="badge">ICIBM 2026</span></div><div class="pub-meta"><strong>Md Shifatul Ahsan Apurba</strong>, Md Selim, Jin Chen · arXiv preprint</div></div><a class="pub-link" href="https://arxiv.org/abs/2605.00901" target="_blank" rel="noopener">arXiv ↗</a></article>
-        <article class="pub"><div class="pub-year">2026</div><div><div class="pub-title">A model to guide successful living with venous thromboembolism (VTE): Recommendations derived from the qualitative phase of a study of diagnostic Delay of VTE (DOVE)</div><div class="pub-meta">Alexandra C. Frost, Veysel K. Baris, Michael Sainlaire, Jin Chen, Minakshi V. Shukla, <strong>Md Shifatul A. Apurba</strong>, Ann C. Hurley, Patricia C. Dykes · <em>Thrombosis Research</em>, 258, 109585</div></div><a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S0049384826000046" target="_blank" rel="noopener">Article ↗</a></article>
-        <article class="pub"><div class="pub-year">2025</div><div><div class="pub-title">Unveiling shadows: A data-driven insight on depression among Bangladeshi university students</div><div class="pub-meta">Sanjib Kumar Sen, <strong>Md Shifatul Ahsan Apurba</strong>, Anika Priodorshinee Mrittika, Md Tawhid Anwar, A.B.M. Alim Al Islam, Jannatun Noor · <em>Heliyon</em>, 11, e41110</div></div><a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S2405844024171411" target="_blank" rel="noopener">Article ↗</a></article>
-        <article class="pub"><div class="pub-year">2023</div><div><div class="pub-title">Development of an OCR-Based System for Reading Text in Dull Conditions</div><div class="pub-meta"><strong>Md Shifatul Ahsan Apurba</strong> et al. · IEEE R10 Humanitarian Technology Conference (R10-HTC)</div></div><a class="pub-link" href="https://www.researchgate.net/publication/397533997_Development_of_an_OCR-Based_System_for_Reading_Text_in_Dull_Conditions" target="_blank" rel="noopener">Paper ↗</a></article>
-        <article class="pub"><div class="pub-year">2023</div><div><div class="pub-title">A Comprehensive Survey on Optimizing Storage Models, Data Layouts, and System Catalogs</div><div class="pub-meta"><strong>Md Shifatul Ahsan Apurba</strong> · <em>International Journal of Distributed Computing and Technology</em>, 9(2), 1–8</div></div><a class="pub-link" href="https://computers.journalspub.info/index.php?journal=JDCT&amp;page=article&amp;op=view&amp;path%5B%5D=931" target="_blank" rel="noopener">Article ↗</a></article>
-      </div><p style="margin-top:22px"><a href="https://scholar.google.com/citations?user=pu5cJSgAAAAJ&amp;hl=en" target="_blank" rel="noopener"><strong>View Google Scholar profile ↗</strong></a></p>
-    </div></section>
+        <article class="pub"><div class="pub-year">2026</div><div><div class="pub-title">RA-CMF: Region-Adaptive Conditional MeanFlow for CT Image Reconstruction <span class="status">ICIBM 2026</span></div><div class="pub-authors"><strong>Md Shifatul Ahsan Apurba</strong>, Md Selim, Jin Chen</div><div class="pub-venue">arXiv preprint · Regular oral presentation at ICIBM 2026</div></div><a class="pub-link" href="https://arxiv.org/abs/2605.00901" target="_blank" rel="noopener">arXiv ↗</a></article>
+        <article class="pub"><div class="pub-year">2026</div><div><div class="pub-title">A model to guide successful living with venous thromboembolism (VTE): Recommendations derived from the qualitative phase of a study of diagnostic Delay of VTE (DOVE)</div><div class="pub-authors">Alexandra C. Frost, Veysel K. Baris, Michael Sainlaire, Jin Chen, Minakshi V. Shukla, <strong>Md Shifatul A. Apurba</strong>, Ann C. Hurley, Patricia C. Dykes</div><div class="pub-venue"><em>Thrombosis Research</em>, 258, 109585</div></div><a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S0049384826000046" target="_blank" rel="noopener">Article ↗</a></article>
+        <article class="pub"><div class="pub-year">2025</div><div><div class="pub-title">Unveiling shadows: A data-driven insight on depression among Bangladeshi university students</div><div class="pub-authors">Sanjib Kumar Sen, <strong>Md Shifatul Ahsan Apurba</strong>, Anika Priodorshinee Mrittika, Md Tawhid Anwar, A.B.M. Alim Al Islam, Jannatun Noor</div><div class="pub-venue"><em>Heliyon</em>, 11, e41110</div></div><a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S2405844024171411" target="_blank" rel="noopener">Article ↗</a></article>
+        <article class="pub"><div class="pub-year">2023</div><div><div class="pub-title">Development of an OCR-Based System for Reading Text in Dull Conditions</div><div class="pub-authors"><strong>Md Shifatul Ahsan Apurba</strong> et al.</div><div class="pub-venue">IEEE R10 Humanitarian Technology Conference (R10-HTC)</div></div><a class="pub-link" href="https://www.researchgate.net/publication/397533997_Development_of_an_OCR-Based_System_for_Reading_Text_in_Dull_Conditions" target="_blank" rel="noopener">Paper ↗</a></article>
+        <article class="pub"><div class="pub-year">2023</div><div><div class="pub-title">A Comprehensive Survey on Optimizing Storage Models, Data Layouts, and System Catalogs</div><div class="pub-authors"><strong>Md Shifatul Ahsan Apurba</strong></div><div class="pub-venue"><em>International Journal of Distributed Computing and Technology</em>, 9(2), 1–8</div></div><a class="pub-link" href="https://computers.journalspub.info/index.php?journal=JDCT&amp;page=article&amp;op=view&amp;path%5B%5D=931" target="_blank" rel="noopener">Article ↗</a></article>
+      </div>
+      <p style="margin:24px 0 0"><a href="https://scholar.google.com/citations?user=pu5cJSgAAAAJ&amp;hl=en" target="_blank" rel="noopener"><strong>Full publication list on Google Scholar ↗</strong></a></p>
+    </div>
+  </section>
 
-    <section id="experience" class="alt"><div class="container">
-      <div class="section-head"><p class="section-kicker">Experience</p><div><h2>Research and professional experience</h2><p>My background combines biomedical AI research with software engineering, enterprise automation, and telecommunications systems.</p></div></div>
-      <div class="timeline"><div class="timeline-item"><div class="timeline-date">Aug 2024 — Present</div><div class="timeline-title">Graduate Research Assistant</div><div class="timeline-org">Department of Biomedical Informatics and Data Science, University of Alabama at Birmingham</div><p>Research on generative AI for CT reconstruction and medical image analysis; development and evaluation of deep-learning pipelines with emphasis on image quality, structural similarity, and radiomic feature consistency.</p></div><div class="timeline-item"><div class="timeline-date">Feb 2024 — Jul 2024</div><div class="timeline-title">Specialist, IT Core Applications</div><div class="timeline-org">Robi Axiata PLC</div><p>Worked on telecom core application systems, capacity planning, automation, API-integrated infrastructure, and data/storage optimization.</p></div><div class="timeline-item"><div class="timeline-date">Jan 2023 — Jan 2024</div><div class="timeline-title">Associate Software Engineer</div><div class="timeline-org">British American Tobacco Bangladesh</div><p>Delivered 21 software and automation projects using Power Platform, ASP.NET, PHP frameworks, and ReactJS; initiatives were reported to save more than 11,000 man-hours annually.</p></div><div class="timeline-item"><div class="timeline-date">Sep 2022 — Dec 2022</div><div class="timeline-title">Intern, Digital Business Solutions</div><div class="timeline-org">British American Tobacco Bangladesh</div><p>Supported cross-market IT projects, internal technical workshops, and development of a guesthouse reservation and management application.</p></div><div class="timeline-item"><div class="timeline-date">Nov 2021 — Aug 2022</div><div class="timeline-title">Undergraduate Teaching Assistant</div><div class="timeline-org">BRAC University</div><p>Taught and supported coursework in MATLAB, Mathematica, and Python and evaluated student programming work.</p></div></div>
-    </div></section>
+  <section id="news">
+    <div class="container">
+      <div class="head"><p class="kicker">News</p><div><h2>Recent updates.</h2><p>A concise record of research and academic milestones.</p></div></div>
+      <div class="news">
+        <div class="news-item"><div class="news-date">Aug 2026</div><p>Presented <strong>RA-CMF</strong> as a regular oral paper at ICIBM 2026 in Buffalo, New York.</p></div>
+        <div class="news-item"><div class="news-date">May 2026</div><p><strong>RA-CMF</strong> became publicly available as an arXiv preprint.</p></div>
+        <div class="news-item"><div class="news-date">Spring 2026</div><p>Advanced to <strong>PhD candidacy</strong> at the University of Alabama at Birmingham.</p></div>
+        <div class="news-item"><div class="news-date">2025</div><p>Completed the <strong>M.S. in Computer Science and Engineering</strong> at BRAC University.</p></div>
+      </div>
+    </div>
+  </section>
 
-    <section id="education"><div class="container"><div class="section-head"><p class="section-kicker">Education</p><div><h2>Academic training</h2><p>Computer science training followed by doctoral research in biomedical health informatics and data science.</p></div></div><div class="education-grid"><article class="degree"><div class="degree-year">Expected 2028</div><h3>PhD Candidate, Biomedical Health Informatics</h3><p>Department of Biomedical Informatics and Data Science<br>University of Alabama at Birmingham<br>Current GPA: 4.00 / 4.00</p></article><article class="degree"><div class="degree-year">2025</div><h3>Master of Computer Science and Engineering</h3><p>BRAC University<br>GPA: 3.73 / 4.00</p></article><article class="degree"><div class="degree-year">2022</div><h3>Bachelor of Computer Science and Engineering</h3><p>BRAC University<br>GPA: 3.74 / 4.00</p></article></div></div></section>
+  <section id="experience" class="soft">
+    <div class="container">
+      <div class="head"><p class="kicker">Experience</p><div><h2>Academic and industry experience.</h2><p>My background combines biomedical AI research with software engineering, enterprise automation, and telecommunications systems.</p></div></div>
+      <div class="experience-columns">
+        <div class="exp-group">
+          <h3>Academic</h3>
+          <div class="exp"><div class="exp-date">Aug 2024 — Present</div><div class="exp-title">Graduate Research Assistant</div><div class="exp-org">University of Alabama at Birmingham</div><p>Research on generative AI for CT reconstruction, medical image analysis, radiomic reliability, and representation learning.</p></div>
+          <div class="exp"><div class="exp-date">Nov 2021 — Aug 2022</div><div class="exp-title">Undergraduate Teaching Assistant</div><div class="exp-org">BRAC University</div><p>Supported instruction in MATLAB, Mathematica, and Python and evaluated programming assignments.</p></div>
+          <div class="exp"><div class="exp-date">Oct 2022 — Jul 2024</div><div class="exp-title">Debate Coach</div><div class="exp-org">Maple Leaf International School</div><p>Taught research, argumentation, public speaking, and competitive debate to secondary-school students.</p></div>
+        </div>
+        <div class="exp-group">
+          <h3>Industry</h3>
+          <div class="exp"><div class="exp-date">Feb 2024 — Jul 2024</div><div class="exp-title">Specialist, IT Core Applications</div><div class="exp-org">Robi Axiata PLC</div><p>Worked on telecom core applications, capacity planning, automation, API-integrated systems, and storage optimization.</p></div>
+          <div class="exp"><div class="exp-date">Jan 2023 — Jan 2024</div><div class="exp-title">Associate Software Engineer</div><div class="exp-org">British American Tobacco Bangladesh</div><p>Delivered software and automation projects using Power Platform, ASP.NET, PHP frameworks, and ReactJS.</p></div>
+          <div class="exp"><div class="exp-date">Sep 2022 — Dec 2022</div><div class="exp-title">Intern, Digital Business Solutions</div><div class="exp-org">British American Tobacco Bangladesh</div><p>Supported cross-market IT projects, internal workshops, and business application development.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="projects" class="alt"><div class="container"><div class="section-head"><p class="section-kicker">Projects</p><div><h2>Selected project</h2><p>Applied AI work beyond the core publication list.</p></div></div><article class="project"><div><h3>ChatAlchemy</h3><p>An AI-enabled interactive assistant for PharmAlchemy that uses large language models to retrieve information from the PharmAlchemy data source and analyze genes or targets using uploaded literature.</p></div><a href="https://chatalchemy.netlify.app/" target="_blank" rel="noopener">Visit project ↗</a></article></div></section>
+  <section id="about">
+    <div class="container">
+      <div class="head"><p class="kicker">About</p><div><h2>Biomedical informatics with a computer science foundation.</h2><p>I am a PhD Candidate in Biomedical Health Informatics and Data Science at UAB. My research centers on machine learning systems for medical imaging and downstream biomedical analysis.</p></div></div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I am particularly interested in generative models that can improve CT reconstruction while preserving the information clinicians and quantitative imaging pipelines rely on. Beyond image reconstruction, I work on representation learning and predictive modeling for biomedical applications.</p>
+          <p>Before beginning my doctoral research, I worked in software engineering and enterprise IT in Bangladesh. That engineering background continues to shape how I approach research: methods should be technically rigorous, reproducible, and useful in realistic settings.</p>
+          <h3 style="margin-top:30px;font-size:1rem">Education</h3>
+          <div class="education">
+            <div class="edu"><div class="edu-year">2028</div><div><strong>PhD Candidate, Biomedical Health Informatics</strong><span>University of Alabama at Birmingham · Expected 2028 · Current GPA 4.00/4.00</span></div></div>
+            <div class="edu"><div class="edu-year">2025</div><div><strong>M.S., Computer Science and Engineering</strong><span>BRAC University · GPA 3.73/4.00</span></div></div>
+            <div class="edu"><div class="edu-year">2022</div><div><strong>B.S., Computer Science and Engineering</strong><span>BRAC University · GPA 3.74/4.00</span></div></div>
+          </div>
+        </div>
+        <aside class="facts">
+          <div class="fact"><span>Current role</span><strong>Graduate Research Assistant, UAB</strong></div>
+          <div class="fact"><span>Primary area</span><strong>Generative AI for Medical Imaging</strong></div>
+          <div class="fact"><span>Research methods</span><strong>Flow Models · RL · Representation Learning</strong></div>
+          <div class="fact"><span>Location</span><strong>Birmingham, Alabama</strong></div>
+          <div class="fact"><span>Contact</span><strong>mapurba@uab.edu</strong></div>
+        </aside>
+      </div>
 
-    <section id="skills"><div class="container"><div class="section-head"><p class="section-kicker">Technical profile</p><div><h2>Methods and tools</h2><p>Selected research and engineering capabilities relevant to biomedical AI, generative modeling, and data science.</p></div></div><div class="skills-grid"><div class="skill-group"><h3>Generative &amp; Deep Learning</h3><div class="chips"><span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">Diffusion Models</span><span class="chip">MeanFlow / Flow Models</span><span class="chip">GANs</span><span class="chip">Transformers</span><span class="chip">Reinforcement Learning</span><span class="chip">Vision-Language Models</span></div></div><div class="skill-group"><h3>Biomedical Imaging &amp; Data</h3><div class="chips"><span class="chip">Medical Image Processing</span><span class="chip">CT Imaging</span><span class="chip">Radiomics</span><span class="chip">OpenCV</span><span class="chip">Scikit-learn</span><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">Matplotlib</span></div></div><div class="skill-group"><h3>LLMs &amp; Representation Learning</h3><div class="chips"><span class="chip">LLM Fine-Tuning</span><span class="chip">Prompt Tuning</span><span class="chip">Instruction Tuning</span><span class="chip">CLIP</span><span class="chip">SigLIP</span><span class="chip">Multimodal Learning</span></div></div><div class="skill-group"><h3>Software &amp; Analytics</h3><div class="chips"><span class="chip">Python</span><span class="chip">Java</span><span class="chip">ASP.NET</span><span class="chip">SQL</span><span class="chip">Power BI</span><span class="chip">Power Automate</span><span class="chip">Power Apps</span><span class="chip">Model Evaluation</span></div></div></div></div></section>
+      <div style="height:52px"></div>
+      <div class="methods">
+        <div class="method"><h3>Generative &amp; representation learning</h3><p>PyTorch, TensorFlow, flow-based models, diffusion models, GANs, transformers, reinforcement learning, LLM fine-tuning, CLIP, and SigLIP.</p></div>
+        <div class="method"><h3>Biomedical imaging &amp; analytics</h3><p>Medical image processing, CT imaging, radiomics, multimodal learning, predictive modeling, OpenCV, scikit-learn, pandas, and NumPy.</p></div>
+        <div class="method"><h3>Software &amp; data</h3><p>Python, Java, ASP.NET, SQL, Power BI, Power Platform, data preprocessing, model evaluation, and optimization.</p></div>
+      </div>
+    </div>
+  </section>
 
-    <section id="leadership" class="alt"><div class="container"><div class="section-head"><p class="section-kicker">Leadership</p><div><h2>Leadership and broader engagement</h2><p>Selected experiences in student leadership, mentoring, teaching, debate, and creative work.</p></div></div><div class="leadership-list"><div class="leadership-item"><strong>BRAC University Debate Club</strong><p>Served as President, supporting a community of more than 500 students and convening national and international debate tournaments.</p></div><div class="leadership-item"><strong>Teaching &amp; Mentoring</strong><p>Experience as an undergraduate teaching assistant and first-year mentor, supporting students in programming, academic planning, and advising.</p></div><div class="leadership-item"><strong>Debate &amp; Public Speaking</strong><p>Competitive debater, adjudicator, and former debate coach with participation in national and international tournaments.</p></div><div class="leadership-item"><strong>Creative &amp; Technical Activities</strong><p>Prior involvement in filmmaking and hackathons, including recognized student film work and technology competition awards.</p></div></div></div></section>
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="head">
+        <p class="kicker">Contact</p>
+        <div>
+          <h2>Research collaborations and professional opportunities.</h2>
+          <p>For research collaboration, academic opportunities, biomedical AI projects, or relevant industry research roles, email is the best way to reach me.</p>
+          <div class="contact-actions">
+            <a class="btn primary" href="mailto:mapurba@uab.edu">Email me</a>
+            <a class="btn secondary" href="cv.html" target="_blank" rel="noopener">View CV ↗</a>
+            <a class="btn secondary" href="https://scholar.google.com/citations?user=pu5cJSgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar ↗</a>
+            <a class="btn secondary" href="https://www.linkedin.com/in/mapurba" target="_blank" rel="noopener">LinkedIn ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
-    <section id="contact"><div class="container"><div class="contact-panel"><div><p class="eyebrow" style="color:#9cd0c1">Contact</p><h2>Research collaborations and professional opportunities</h2><p>For research collaboration, academic opportunities, biomedical AI projects, or relevant industry roles, email is the best way to reach me.</p></div><div class="contact-links"><a href="mailto:mapurba@uab.edu">mapurba@uab.edu</a><a href="https://scholar.google.com/citations?user=pu5cJSgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar ↗</a><a href="https://www.linkedin.com/in/mapurba" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://github.com/apurba-online" target="_blank" rel="noopener">GitHub ↗</a></div></div></div></section>
-  </main>
-
-  <footer><div class="container footer-row"><span>© <span id="year">2026</span> Md Shifatul Ahsan Apurba.</span><span>Last updated August 2026 · Hosted on GitHub Pages</span></div></footer>
-  <script>const b=document.querySelector('.menu-button'),n=document.getElementById('nav-links');b.addEventListener('click',()=>{const o=n.classList.toggle('open');b.setAttribute('aria-expanded',String(o))});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');b.setAttribute('aria-expanded','false')}));document.getElementById('year').textContent=new Date().getFullYear();</script>
+<footer>
+  <div class="container foot"><span>© <span id="year">2026</span> Md Shifatul Ahsan Apurba.</span><span>Last updated August 2026 · GitHub Pages</span></div>
+</footer>
+<script>
+  const b=document.querySelector('.menu'),n=document.getElementById('navlinks');
+  b.addEventListener('click',()=>{const o=n.classList.toggle('open');b.setAttribute('aria-expanded',String(o))});
+  n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');b.setAttribute('aria-expanded','false')}));
+  document.getElementById('year').textContent=new Date().getFullYear();
+</script>
 </body>
 </html>
