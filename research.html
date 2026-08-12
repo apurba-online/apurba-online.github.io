@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Research of Md Shifatul Ahsan Apurba in biomedical AI, CT reconstruction, generative models, representation learning, radiomics, and predictive modeling.">
+  <link rel="icon" type="image/png" href="assets/img/root/favicon.png"><link rel="stylesheet" href="academic.css">
+  <title>Research | Md Shifatul Ahsan Apurba</title>
+</head>
+<body>
+<header class="site-header"><div class="wrap top"><a class="site-name" href="index.html">Md Shifatul Ahsan Apurba</a><nav class="nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="research.html" aria-current="page">Research</a><a href="publications.html">Publications</a><a href="experience.html">Experience</a><a class="cv-link" href="cv.html">CV</a></nav></div></header>
+<main><div class="wrap">
+  <h1 class="page-title">Research</h1>
+  <p class="lead">My research focuses on reliable machine learning methods for biomedical imaging and clinical prediction. A central theme is improving image reconstruction and learned representations while preserving clinically meaningful anatomy, texture, and quantitative imaging information.</p>
+
+  <section class="research-block" id="racmf">
+    <h2>RA-CMF: Region-Adaptive Conditional MeanFlow for CT Image Reconstruction</h2>
+    <div class="meta">ICIBM 2026 · Regular oral presentation · Student and Trainee Travel Award · <a href="https://arxiv.org/abs/2605.00901" target="_blank" rel="noopener">arXiv</a></div>
+    <p>RA-CMF is a CT reconstruction framework that combines a conditional MeanFlow backbone for global reconstruction with region-adaptive refinement. The goal is to improve reconstruction consistency while focusing additional modeling effort on spatial regions that remain difficult after the global reconstruction stage.</p>
+    <p>The work is motivated by the need to preserve clinically relevant local anatomy and quantitative image characteristics rather than applying indiscriminate corrections across an entire CT image.</p>
+    <div class="method-line"><strong>High-level method:</strong> source CT → conditional MeanFlow reconstruction → regional assessment → selective refinement → reconstructed CT.</div>
+    <h3>Evaluation focus</h3>
+    <ul class="result-list">
+      <li>Full-image reconstruction quality using PSNR and SSIM.</li>
+      <li>Tumor-region reconstruction quality.</li>
+      <li>Radiomic feature consistency across first-order and texture feature families.</li>
+      <li>Preservation of clinically relevant image structure and texture.</li>
+    </ul>
+    <p class="back"><a href="https://arxiv.org/abs/2605.00901" target="_blank" rel="noopener">Read the paper on arXiv →</a></p>
+  </section>
+
+  <section class="research-block">
+    <h2>Biomedical Representation Learning</h2>
+    <p>I am interested in learning compact medical-image representations that can support downstream clinical prediction and multimodal modeling. Current directions include extracting representations from reconstruction models, combining global image information with informative local regions, and studying how reconstruction-aware features transfer to predictive tasks.</p>
+    <ul>
+      <li>CT slice and patient-level representations.</li>
+      <li>Self-supervised and invariance-based representation learning.</li>
+      <li>Local-region and global-image feature aggregation.</li>
+      <li>Multimodal fusion with clinical variables.</li>
+    </ul>
+  </section>
+
+  <section class="research-block">
+    <h2>Radiomics &amp; Predictive Modeling</h2>
+    <p>Quantitative imaging features can be sensitive to image reconstruction and acquisition differences. I study how generative reconstruction affects radiomic reliability and how imaging representations can be used in downstream biomedical prediction.</p>
+    <ul>
+      <li>Radiomic feature consistency and concordance.</li>
+      <li>Texture-preserving image reconstruction.</li>
+      <li>Clinical outcome and risk prediction from imaging.</li>
+      <li>Evaluation of downstream utility, not only pixel-level similarity.</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Research Methods</h2>
+    <div class="two-col">
+      <ul class="plain-list"><li>Flow matching and MeanFlow models</li><li>Diffusion and generative models</li><li>Reinforcement learning</li><li>Representation learning</li></ul>
+      <ul class="plain-list"><li>Medical image processing</li><li>Radiomics</li><li>Multimodal learning</li><li>Predictive modeling</li></ul>
+    </div>
+  </section>
+  <p class="back"><a href="index.html">← Back to home</a></p>
+</div></main>
+<footer class="footer"><div class="wrap"><span>© 2026 Md Shifatul Ahsan Apurba</span><span><a href="mailto:mapurba@uab.edu">mapurba@uab.edu</a></span></div></footer>
+</body></html>

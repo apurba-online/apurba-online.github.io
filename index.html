@@ -3,273 +3,143 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0b3b36">
-  <meta name="description" content="Md Shifatul Ahsan Apurba is a PhD Candidate at the University of Alabama at Birmingham working on generative AI, biomedical imaging, CT reconstruction, representation learning, and predictive modeling.">
+  <meta name="description" content="Md Shifatul Ahsan Apurba — PhD Candidate in Biomedical Health Informatics and Data Science at the University of Alabama at Birmingham. Research in biomedical AI, CT reconstruction, generative models, radiomics, and representation learning.">
   <meta name="author" content="Md Shifatul Ahsan Apurba">
   <meta property="og:title" content="Md Shifatul Ahsan Apurba | Biomedical AI Researcher">
-  <meta property="og:description" content="PhD Candidate at UAB working on generative AI for biomedical imaging and clinical modeling.">
+  <meta property="og:description" content="Academic website of Md Shifatul Ahsan Apurba, PhD Candidate at UAB working on generative and predictive AI for biomedical imaging.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://apurba-online.github.io/me/">
   <meta property="og:image" content="https://avatars.githubusercontent.com/u/15920359?v=4">
   <link rel="icon" type="image/png" href="assets/img/root/favicon.png">
-  <title>Md Shifatul Ahsan Apurba | Biomedical AI Researcher</title>
-  <style>
-    :root{--ink:#1b2522;--muted:#5d6965;--green:#0b3b36;--green2:#176457;--line:#dfe6e3;--soft:#f6f8f7;--award:#9b6b1b;--awardbg:#fff8ea;--max:1080px}
-    *{box-sizing:border-box} html{scroll-behavior:smooth}
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.58;-webkit-font-smoothing:antialiased}
-    a{color:var(--green2);text-underline-offset:3px} a:hover{color:var(--green)}
-    img{max-width:100%;display:block}.container{width:min(var(--max),calc(100% - 40px));margin:0 auto}
-    .site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line)}
-    .header-row{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .brand{font-weight:800;color:var(--green);text-decoration:none;white-space:nowrap;font-size:.96rem}
-    .nav{display:flex;align-items:center;gap:19px;flex-wrap:wrap;justify-content:flex-end}
-    .nav a{font-size:.84rem;font-weight:700;text-decoration:none;color:#42524d}.nav a:hover{color:var(--green2)}
-    .nav .cv{background:var(--green);color:#fff;padding:7px 11px;border-radius:5px}.nav .cv:hover{background:var(--green2);color:#fff}
-    .menu{display:none;border:1px solid var(--line);background:#fff;padding:7px 10px;border-radius:5px;font:700 .85rem Arial,Helvetica,sans-serif;color:var(--green)}
-    .hero{background:var(--soft);border-bottom:1px solid var(--line)}
-    .hero-inner{display:grid;grid-template-columns:220px 1fr;gap:42px;align-items:center;padding:54px 0}
-    .photo{width:220px;aspect-ratio:1/1.1;object-fit:cover;border:1px solid var(--line);background:#e9eeec}
-    .eyebrow{margin:0 0 8px;color:var(--green2);font-size:.76rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em}
-    h1,h2,h3{color:var(--green);margin-top:0;line-height:1.2}
-    h1{font-size:clamp(2.6rem,5vw,4.5rem);letter-spacing:-.045em;margin-bottom:10px}
-    .role{font-size:1.13rem;font-weight:700;color:#334640;margin:0 0 16px}
-    .summary{max-width:760px;color:var(--muted);font-size:.98rem;margin:0 0 19px}
-    .quick-links{display:flex;flex-wrap:wrap;gap:10px 16px}.quick-links a{font-size:.87rem;font-weight:700;text-decoration:none}
-    .award-strip{margin-top:22px;padding:13px 15px;background:var(--awardbg);border-left:4px solid #d7ad56;color:#6b5428;font-size:.87rem;max-width:800px}
-    .award-strip strong{color:var(--award)}
-    main{padding-bottom:40px}
-    section{padding:56px 0;border-bottom:1px solid var(--line)}section:last-of-type{border-bottom:0}
-    .section-grid{display:grid;grid-template-columns:165px 1fr;gap:42px;align-items:start}
-    .section-label{position:sticky;top:88px}.section-label span{display:block;color:var(--green2);font-size:.74rem;font-weight:800;text-transform:uppercase;letter-spacing:.11em;margin-bottom:6px}.section-label h2{font-size:1.42rem;margin-bottom:0}
-    .section-content>p:first-child{margin-top:0}.section-content p{color:#45554f}
-    .interests{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0}.interest{background:var(--soft);border:1px solid var(--line);padding:6px 9px;font-size:.78rem;font-weight:700;color:#4c5c57}
-    .research-item{padding:22px 0;border-top:1px solid var(--line)}.research-item:first-of-type{margin-top:6px}.research-item h3{font-size:1.15rem;margin-bottom:6px}.research-item p{margin:0 0 9px;color:var(--muted);font-size:.9rem}.research-meta{font-size:.78rem;color:var(--green2);font-weight:800}
-    .feature-note{margin-top:12px;background:var(--soft);border:1px solid var(--line);padding:16px;font-size:.86rem;color:#52615c}
-    .pub-list{list-style:none;margin:0;padding:0}.pub{padding:19px 0;border-top:1px solid var(--line)}.pub:first-child{border-top:0;padding-top:0}
-    .pub-title{font-weight:800;color:var(--green);line-height:1.4}.pub-authors,.pub-venue{font-size:.86rem;color:#4d5c57;margin-top:4px}.pub-venue{color:var(--muted)}
-    .pub-links{display:flex;gap:13px;flex-wrap:wrap;margin-top:7px}.pub-links a{font-size:.8rem;font-weight:800;text-decoration:none}
-    .badge{display:inline-block;margin-left:7px;padding:2px 6px;border-radius:3px;background:#eaf3f0;color:var(--green2);font-size:.66rem;font-weight:800;vertical-align:1px}.badge.award{background:var(--awardbg);color:var(--award)}
-    .award-item{padding:18px 0;border-top:1px solid var(--line)}.award-item:first-child{border-top:0;padding-top:0}.award-item strong{color:var(--green)}.award-item p{margin:5px 0 0;color:var(--muted);font-size:.88rem}
-    .news-list{margin:0;padding:0;list-style:none}.news-list li{display:grid;grid-template-columns:100px 1fr;gap:18px;padding:12px 0;border-top:1px solid var(--line);font-size:.88rem}.news-list li:first-child{border-top:0;padding-top:0}.news-date{font-weight:800;color:var(--green2)}
-    .subhead{font-size:1.02rem;margin:24px 0 7px}.timeline{border-top:1px solid var(--line)}.job{display:grid;grid-template-columns:155px 1fr;gap:22px;padding:17px 0;border-bottom:1px solid var(--line)}.job-date{font-size:.78rem;font-weight:800;color:var(--green2)}.job-title{font-weight:800;color:var(--green)}.job-org{font-size:.87rem;color:#465751;font-weight:700;margin-top:2px}.job p{margin:5px 0 0;color:var(--muted);font-size:.86rem}
-    .edu-list{border-top:1px solid var(--line)}.edu{display:grid;grid-template-columns:155px 1fr;gap:22px;padding:17px 0;border-bottom:1px solid var(--line)}.edu-year{font-size:.78rem;font-weight:800;color:var(--green2)}.edu strong{color:var(--green)}.edu span{display:block;color:var(--muted);font-size:.87rem;margin-top:3px}
-    .skills{display:grid;grid-template-columns:150px 1fr;gap:11px 18px;margin-top:14px}.skills b{color:var(--green);font-size:.87rem}.skills span{color:var(--muted);font-size:.87rem}
-    .project{padding:17px 0;border-top:1px solid var(--line)}.project:first-child{border-top:0}.project h3{font-size:1rem;margin-bottom:5px}.project p{margin:0;color:var(--muted);font-size:.87rem}.project a{font-weight:800;font-size:.82rem;text-decoration:none}
-    .contact-links{display:flex;flex-wrap:wrap;gap:10px 18px}.contact-links a{font-weight:800;text-decoration:none}
-    footer{background:var(--soft);border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:.8rem}.foot{display:flex;justify-content:space-between;gap:20px}
-    @media(max-width:900px){.header-row{align-items:flex-start;padding:14px 0}.nav{position:absolute;display:none;top:62px;left:16px;right:16px;background:#fff;border:1px solid var(--line);padding:10px;flex-direction:column;align-items:stretch}.nav.open{display:flex}.nav a{padding:8px}.menu{display:block}.hero-inner{grid-template-columns:170px 1fr}.photo{width:170px}.section-grid{grid-template-columns:1fr;gap:15px}.section-label{position:static;display:flex;align-items:baseline;gap:10px}.section-label span{margin:0}.section-label h2{font-size:1.3rem}}
-    @media(max-width:620px){.container{width:min(var(--max),calc(100% - 28px))}.hero-inner{grid-template-columns:1fr;gap:24px;padding:38px 0}.photo{width:170px}.job,.edu{grid-template-columns:1fr;gap:4px}.news-list li{grid-template-columns:82px 1fr}.skills{grid-template-columns:1fr;gap:3px}section{padding:43px 0}.foot{flex-direction:column;gap:5px}}
-  </style>
+  <link rel="stylesheet" href="academic.css">
+  <title>Md Shifatul Ahsan Apurba | Academic Website</title>
 </head>
 <body>
 <header class="site-header">
-  <div class="container header-row">
-    <a class="brand" href="#top">Md Shifatul Ahsan Apurba</a>
-    <button class="menu" aria-expanded="false" aria-controls="nav">Menu</button>
-    <nav class="nav" id="nav" aria-label="Primary navigation">
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#awards">Awards</a>
-      <a href="#news">News</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills &amp; Projects</a>
-      <a href="#contact">Contact</a>
-      <a class="cv" href="cv.html" target="_blank" rel="noopener">CV</a>
+  <div class="wrap top">
+    <a class="site-name" href="index.html">Md Shifatul Ahsan Apurba</a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="experience.html">Experience</a>
+      <a class="cv-link" href="cv.html">CV</a>
     </nav>
   </div>
 </header>
 
-<div id="top" class="hero">
-  <div class="container hero-inner">
-    <img class="photo" src="https://avatars.githubusercontent.com/u/15920359?v=4" alt="Md Shifatul Ahsan Apurba">
-    <div>
-      <p class="eyebrow">Biomedical AI · Medical Imaging · Generative Models</p>
-      <h1>Md Shifatul Ahsan Apurba</h1>
-      <p class="role">PhD Candidate in Biomedical Health Informatics &amp; Data Science, University of Alabama at Birmingham</p>
-      <p class="summary">I develop generative and predictive AI methods for biomedical imaging, with current work in CT reconstruction, representation learning, radiomic reliability, and multimodal biomedical modeling.</p>
-      <div class="quick-links">
-        <a href="mailto:mapurba@uab.edu">Email</a>
-        <a href="https://scholar.google.com/citations?user=pu5cJSgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
-        <a href="https://github.com/apurba-online" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/mapurba" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="cv.html" target="_blank" rel="noopener">View CV</a>
-      </div>
-      <div class="award-strip"><strong>ICIBM 2026 Student &amp; Trainee Travel Award.</strong> Received in connection with RA-CMF, recognizing outstanding contribution and commitment to research.</div>
-    </div>
-  </div>
-</div>
-
 <main>
-<section id="about">
-  <div class="container section-grid">
-    <div class="section-label"><span>01</span><h2>About</h2></div>
-    <div class="section-content">
-      <p>I am a PhD Candidate in Biomedical Health Informatics and Data Science at the University of Alabama at Birmingham. My research focuses on reliable machine learning systems for medical imaging and downstream biomedical analysis.</p>
-      <p>I am particularly interested in generative models that improve CT reconstruction while preserving clinically meaningful anatomy, texture, and quantitative imaging information. My broader work includes representation learning, predictive modeling, multimodal biomedical AI, and radiomics.</p>
-      <p>Before beginning my doctoral research, I worked in software engineering and enterprise IT in Bangladesh. That engineering background continues to shape how I approach research: methods should be technically rigorous, reproducible, and useful in realistic settings.</p>
-      <div class="interests">
-        <span class="interest">Generative Medical Imaging</span><span class="interest">CT Reconstruction</span><span class="interest">Flow Matching / MeanFlow</span><span class="interest">Representation Learning</span><span class="interest">Reinforcement Learning</span><span class="interest">Radiomics</span><span class="interest">Multimodal Biomedical AI</span><span class="interest">Predictive Modeling</span>
+  <div class="wrap">
+    <section class="profile">
+      <div>
+        <img class="profile-photo" src="https://avatars.githubusercontent.com/u/15920359?v=4" alt="Md Shifatul Ahsan Apurba">
       </div>
-    </div>
-  </div>
-</section>
-
-<section id="research">
-  <div class="container section-grid">
-    <div class="section-label"><span>02</span><h2>Research</h2></div>
-    <div class="section-content">
-      <div class="research-item">
-        <div class="research-meta">FEATURED RESEARCH · ICIBM 2026 ORAL</div>
-        <h3>RA-CMF: Region-Adaptive Conditional MeanFlow for CT Image Reconstruction</h3>
-        <p>RA-CMF combines a conditional MeanFlow reconstruction backbone with region-adaptive refinement so that additional modeling effort is concentrated on spatial regions that are more difficult to reconstruct.</p>
-        <p>The work emphasizes reconstruction fidelity together with preservation of local anatomy, texture, and radiomic consistency.</p>
-        <div class="pub-links"><a href="https://arxiv.org/abs/2605.00901" target="_blank" rel="noopener">Paper / arXiv</a><a href="#publications">Publication entry</a></div>
-        <div class="feature-note"><strong>Recognition:</strong> ICIBM 2026 Student &amp; Trainee Travel Award for outstanding contribution and commitment to research.</div>
+      <div>
+        <h1>Md Shifatul Ahsan Apurba</h1>
+        <p class="title">PhD Candidate in Biomedical Health Informatics &amp; Data Science</p>
+        <p class="affiliation">Department of Biomedical Informatics and Data Science<br>University of Alabama at Birmingham (UAB)</p>
+        <p class="summary">I am a biomedical AI researcher working on generative and predictive methods for medical imaging. My current research focuses on CT image reconstruction, flow-based generative modeling, region-adaptive learning, biomedical representation learning, radiomics, and downstream clinical prediction.</p>
+        <div class="links">
+          <a href="mailto:mapurba@uab.edu">Email</a>
+          <a href="https://scholar.google.com/citations?user=pu5cJSgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://github.com/apurba-online" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/mapurba" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="cv.html">Curriculum Vitae</a>
+        </div>
+        <div class="award-note"><strong>ICIBM 2026 Student and Trainee Travel Award.</strong> Received in connection with RA-CMF, recognizing outstanding contribution and commitment to research.</div>
       </div>
-      <div class="research-item"><h3>Generative CT reconstruction</h3><p>Flow-based, diffusion-based, and other generative modeling approaches for reconstruction and protocol-related image variability.</p></div>
-      <div class="research-item"><h3>Biomedical representation learning</h3><p>Image representations for downstream clinical prediction, multimodal modeling, and longitudinal or patient-level analysis.</p></div>
-      <div class="research-item"><h3>Radiomics and predictive modeling</h3><p>Quantitative imaging reliability, radiomic consistency, and predictive learning for biomedical applications.</p></div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section id="publications">
-  <div class="container section-grid">
-    <div class="section-label"><span>03</span><h2>Publications</h2></div>
-    <div class="section-content">
-      <ul class="pub-list">
-        <li class="pub">
-          <div class="pub-title">RA-CMF: Region-Adaptive Conditional MeanFlow for CT Image Reconstruction <span class="badge">ICIBM 2026 Oral</span><span class="badge award">Travel Award</span></div>
-          <div class="pub-authors"><strong>Md Shifatul Ahsan Apurba</strong>, Md Selim, Jin Chen</div>
-          <div class="pub-venue">arXiv preprint · Regular oral presentation at ICIBM 2026</div>
-          <div class="pub-links"><a href="https://arxiv.org/abs/2605.00901" target="_blank" rel="noopener">arXiv</a></div>
-        </li>
-        <li class="pub">
-          <div class="pub-title">A model to guide successful living with venous thromboembolism (VTE): Recommendations derived from the qualitative phase of a study of diagnostic Delay of VTE (DOVE)</div>
-          <div class="pub-authors">Alexandra C. Frost, Veysel K. Baris, Michael Sainlaire, Jin Chen, Minakshi V. Shukla, <strong>Md Shifatul A. Apurba</strong>, Ann C. Hurley, Patricia C. Dykes</div>
-          <div class="pub-venue"><em>Thrombosis Research</em>, 258, 109585, 2026</div>
-          <div class="pub-links"><a href="https://www.sciencedirect.com/science/article/pii/S0049384826000046" target="_blank" rel="noopener">Article</a></div>
-        </li>
-        <li class="pub">
-          <div class="pub-title">Unveiling shadows: A data-driven insight on depression among Bangladeshi university students</div>
-          <div class="pub-authors">Sanjib Kumar Sen, <strong>Md Shifatul Ahsan Apurba</strong>, Anika Priodorshinee Mrittika, Md Tawhid Anwar, A.B.M. Alim Al Islam, Jannatun Noor</div>
-          <div class="pub-venue"><em>Heliyon</em>, 11, e41110, 2025</div>
-          <div class="pub-links"><a href="https://www.sciencedirect.com/science/article/pii/S2405844024171411" target="_blank" rel="noopener">Article</a></div>
-        </li>
-        <li class="pub">
-          <div class="pub-title">Development of an OCR-Based System for Reading Text in Dull Conditions</div>
-          <div class="pub-authors"><strong>Md Shifatul Ahsan Apurba</strong> et al.</div>
-          <div class="pub-venue">IEEE R10 Humanitarian Technology Conference (R10-HTC), 2023</div>
-          <div class="pub-links"><a href="https://www.researchgate.net/publication/397533997_Development_of_an_OCR-Based_System_for_Reading_Text_in_Dull_Conditions" target="_blank" rel="noopener">Paper</a></div>
-        </li>
-        <li class="pub">
-          <div class="pub-title">A Comprehensive Survey on Optimizing Storage Models, Data Layouts, and System Catalogs</div>
-          <div class="pub-authors"><strong>Md Shifatul Ahsan Apurba</strong></div>
-          <div class="pub-venue"><em>International Journal of Distributed Computing and Technology</em>, 9(2), 1–8, 2023</div>
-          <div class="pub-links"><a href="https://computers.journalspub.info/index.php?journal=JDCT&amp;page=article&amp;op=view&amp;path%5B%5D=931" target="_blank" rel="noopener">Article</a></div>
-        </li>
+    <section class="section" id="about">
+      <h2>About</h2>
+      <p>I am pursuing a PhD in Biomedical Health Informatics and Data Science at UAB. My research sits at the intersection of machine learning, medical image analysis, and biomedical data science, with an emphasis on methods that improve image reconstruction while preserving clinically meaningful anatomy, texture, and quantitative imaging information.</p>
+      <p>Before starting my doctoral research, I worked in software engineering and enterprise technology roles in Bangladesh. That engineering background continues to shape my research approach: I am interested in methods that are technically rigorous, reproducible, and useful in realistic biomedical settings.</p>
+    </section>
+
+    <section class="section">
+      <h2>Research Interests</h2>
+      <ul class="research-interests">
+        <li>Generative AI for medical imaging</li>
+        <li>CT image reconstruction</li>
+        <li>Flow matching and MeanFlow models</li>
+        <li>Region-adaptive and reinforcement learning methods</li>
+        <li>Biomedical representation learning</li>
+        <li>Radiomics and quantitative imaging</li>
+        <li>Multimodal biomedical AI</li>
+        <li>Predictive modeling for clinical outcomes</li>
       </ul>
-      <p><a href="https://scholar.google.com/citations?user=pu5cJSgAAAAJ&amp;hl=en" target="_blank" rel="noopener"><strong>View complete Google Scholar profile</strong></a></p>
-    </div>
-  </div>
-</section>
+      <p class="back"><a href="research.html">Read more about my research →</a></p>
+    </section>
 
-<section id="awards">
-  <div class="container section-grid">
-    <div class="section-label"><span>04</span><h2>Awards</h2></div>
-    <div class="section-content">
-      <div class="award-item"><strong>ICIBM 2026 Student &amp; Trainee Travel Award</strong><p>Received in connection with the RA-CMF research presentation, recognizing outstanding contribution and commitment to research.</p></div>
-      <div class="award-item"><strong>Additional leadership, debate, filmmaking, and hackathon recognitions</strong><p>Selected activities and recognitions from earlier academic and extracurricular work are summarized in the CV.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="news">
-  <div class="container section-grid">
-    <div class="section-label"><span>05</span><h2>News</h2></div>
-    <div class="section-content">
-      <ul class="news-list">
-        <li><span class="news-date">Aug 2026</span><span>Received the <strong>ICIBM 2026 Student &amp; Trainee Travel Award</strong> and presented <strong>RA-CMF</strong> as a regular oral paper in Buffalo, New York.</span></li>
-        <li><span class="news-date">May 2026</span><span><strong>RA-CMF</strong> became publicly available as an arXiv preprint.</span></li>
-        <li><span class="news-date">Spring 2026</span><span>Advanced to <strong>PhD candidacy</strong> at the University of Alabama at Birmingham.</span></li>
-        <li><span class="news-date">2025</span><span>Completed the <strong>M.S. in Computer Science and Engineering</strong> at BRAC University.</span></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section id="experience">
-  <div class="container section-grid">
-    <div class="section-label"><span>06</span><h2>Experience</h2></div>
-    <div class="section-content">
-      <h3 class="subhead">Academic</h3>
-      <div class="timeline">
-        <div class="job"><div class="job-date">Aug 2024 — Present</div><div><div class="job-title">Graduate Research Assistant</div><div class="job-org">University of Alabama at Birmingham</div><p>Research on generative AI for CT reconstruction, medical image analysis, radiomic reliability, representation learning, and predictive modeling.</p></div></div>
-        <div class="job"><div class="job-date">Nov 2021 — Aug 2022</div><div><div class="job-title">Undergraduate Teaching Assistant</div><div class="job-org">BRAC University</div><p>Supported instruction in MATLAB, Mathematica, and Python and evaluated programming assignments.</p></div></div>
-        <div class="job"><div class="job-date">Oct 2022 — Jul 2024</div><div><div class="job-title">Debate Coach</div><div class="job-org">Maple Leaf International School</div><p>Taught research, argumentation, public speaking, critical listening, and competitive debate.</p></div></div>
+    <section class="section" id="news">
+      <h2>News</h2>
+      <div class="news-list">
+        <div class="news-item"><div class="date">Aug 2026</div><p>Presented <strong>RA-CMF</strong> as a regular oral paper at ICIBM 2026 in Buffalo, New York, and received the <strong>Student and Trainee Travel Award</strong>.</p></div>
+        <div class="news-item"><div class="date">May 2026</div><p><strong>RA-CMF: Region-Adaptive Conditional MeanFlow for CT Image Reconstruction</strong> became available on arXiv.</p></div>
+        <div class="news-item"><div class="date">Spring 2026</div><p>Advanced to <strong>PhD candidacy</strong> at the University of Alabama at Birmingham.</p></div>
+        <div class="news-item"><div class="date">2025</div><p>Completed an <strong>M.S. in Computer Science and Engineering</strong> at BRAC University.</p></div>
       </div>
-      <h3 class="subhead">Industry</h3>
-      <div class="timeline">
-        <div class="job"><div class="job-date">Feb 2024 — Jul 2024</div><div><div class="job-title">Specialist, IT Core Applications</div><div class="job-org">Robi Axiata PLC</div><p>Worked on telecom core applications, capacity planning, automation, API-integrated systems, and storage optimization.</p></div></div>
-        <div class="job"><div class="job-date">Jan 2023 — Jan 2024</div><div><div class="job-title">Associate Software Engineer</div><div class="job-org">British American Tobacco Bangladesh</div><p>Delivered software and automation projects using Power Platform, ASP.NET, PHP frameworks, and ReactJS.</p></div></div>
-        <div class="job"><div class="job-date">Sep 2022 — Dec 2022</div><div><div class="job-title">Intern, Digital Business Solutions</div><div class="job-org">British American Tobacco Bangladesh</div><p>Supported cross-market IT projects, internal workshops, and business application development.</p></div></div>
-        <div class="job"><div class="job-date">Oct 2021 — Dec 2021</div><div><div class="job-title">Intern, Core Network Service Management</div><div class="job-org">Banglalink Digital Communications Ltd.</div><p>Worked on data-driven network routing across multiple network nodes.</p></div></div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section id="education">
-  <div class="container section-grid">
-    <div class="section-label"><span>07</span><h2>Education</h2></div>
-    <div class="section-content">
-      <div class="edu-list">
-        <div class="edu"><div class="edu-year">Expected 2028</div><div><strong>PhD Candidate, Biomedical Health Informatics</strong><span>Department of Biomedical Informatics and Data Science, University of Alabama at Birmingham · Current GPA: 4.00 / 4.00</span></div></div>
-        <div class="edu"><div class="edu-year">2025</div><div><strong>M.S., Computer Science and Engineering</strong><span>BRAC University · GPA: 3.73 / 4.00</span></div></div>
-        <div class="edu"><div class="edu-year">2022</div><div><strong>B.S., Computer Science and Engineering</strong><span>BRAC University · GPA: 3.74 / 4.00</span></div></div>
+    <section class="section" id="selected-publications">
+      <h2>Selected Publications</h2>
+      <div class="pub-list">
+        <article class="pub-item">
+          <div class="year">2026</div>
+          <div>
+            <div class="pub-title">RA-CMF: Region-Adaptive Conditional MeanFlow for CT Image Reconstruction <span class="badge">ICIBM 2026 Oral</span> <span class="badge award">Travel Award</span></div>
+            <div class="authors"><strong>Md Shifatul Ahsan Apurba</strong>, Md Selim, Jin Chen</div>
+            <div class="venue">ICIBM 2026 · arXiv preprint</div>
+            <div class="pub-links"><a href="https://arxiv.org/abs/2605.00901" target="_blank" rel="noopener">arXiv</a><a href="research.html#racmf">Project overview</a></div>
+          </div>
+        </article>
+        <article class="pub-item">
+          <div class="year">2026</div>
+          <div>
+            <div class="pub-title">A model to guide successful living with venous thromboembolism (VTE): Recommendations derived from the qualitative phase of a study of diagnostic Delay of VTE (DOVE)</div>
+            <div class="authors">Alexandra C. Frost, Veysel K. Baris, Michael Sainlaire, Jin Chen, Minakshi V. Shukla, <strong>Md Shifatul A. Apurba</strong>, Ann C. Hurley, Patricia C. Dykes</div>
+            <div class="venue"><em>Thrombosis Research</em>, 258, 109585</div>
+            <div class="pub-links"><a href="https://www.sciencedirect.com/science/article/pii/S0049384826000046" target="_blank" rel="noopener">Article</a></div>
+          </div>
+        </article>
+        <article class="pub-item">
+          <div class="year">2025</div>
+          <div>
+            <div class="pub-title">Unveiling shadows: A data-driven insight on depression among Bangladeshi university students</div>
+            <div class="authors">Sanjib Kumar Sen, <strong>Md Shifatul Ahsan Apurba</strong>, Anika Priodorshinee Mrittika, Md Tawhid Anwar, A.B.M. Alim Al Islam, Jannatun Noor</div>
+            <div class="venue"><em>Heliyon</em>, 11, e41110</div>
+            <div class="pub-links"><a href="https://www.sciencedirect.com/science/article/pii/S2405844024171411" target="_blank" rel="noopener">Article</a></div>
+          </div>
+        </article>
       </div>
-    </div>
-  </div>
-</section>
+      <p class="back"><a href="publications.html">View all publications →</a></p>
+    </section>
 
-<section id="skills">
-  <div class="container section-grid">
-    <div class="section-label"><span>08</span><h2>Skills &amp; Projects</h2></div>
-    <div class="section-content">
-      <div class="skills">
-        <b>Generative AI</b><span>PyTorch, TensorFlow, diffusion models, GANs, MeanFlow / flow-based models, reinforcement learning, transformers.</span>
-        <b>Biomedical AI</b><span>Medical image processing, CT imaging, radiomics, representation learning, multimodal learning, predictive modeling.</span>
-        <b>LLMs / VLMs</b><span>LLM fine-tuning, prompt and instruction tuning, CLIP, SigLIP.</span>
-        <b>Programming &amp; Data</b><span>Python, Java, ASP.NET, SQL, OpenCV, scikit-learn, pandas, NumPy, Matplotlib, Power BI, Power Platform.</span>
+    <section class="section" id="awards">
+      <h2>Awards &amp; Recognition</h2>
+      <div class="news-list">
+        <div class="news-item"><div class="date">2026</div><p><strong>ICIBM Student and Trainee Travel Award</strong> — recognition for outstanding contribution and commitment to research, associated with RA-CMF.</p></div>
       </div>
-      <h3 class="subhead">Selected Project</h3>
-      <div class="project"><h3>ChatAlchemy</h3><p>AI-enabled assistant for PharmAlchemy using large language models to retrieve structured information and analyze genes or targets using uploaded literature.</p><p><a href="https://chatalchemy.netlify.app/" target="_blank" rel="noopener">Visit project</a></p></div>
-      <h3 class="subhead">Leadership &amp; Activities</h3>
-      <div class="project"><h3>BRAC University Debate Club</h3><p>Former President; experience in student leadership, debate, public speaking, mentoring, and tournament organization.</p></div>
-      <div class="project"><h3>Teaching, mentoring, filmmaking, and hackathons</h3><p>Additional teaching, mentoring, creative, and technical activities are summarized in the CV.</p></div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section id="contact">
-  <div class="container section-grid">
-    <div class="section-label"><span>09</span><h2>Contact</h2></div>
-    <div class="section-content">
-      <p>For research collaboration, academic opportunities, biomedical AI projects, or relevant industry research roles, email is the best way to reach me.</p>
-      <div class="contact-links"><a href="mailto:mapurba@uab.edu">mapurba@uab.edu</a><a href="https://scholar.google.com/citations?user=pu5cJSgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a><a href="https://github.com/apurba-online" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/mapurba" target="_blank" rel="noopener">LinkedIn</a><a href="cv.html" target="_blank" rel="noopener">CV</a></div>
-    </div>
+    <section class="section" id="education">
+      <h2>Education</h2>
+      <div class="degree"><strong>PhD Candidate, Biomedical Health Informatics</strong><span>University of Alabama at Birmingham · Expected 2028 · Current GPA: 4.00/4.00</span></div>
+      <div class="degree"><strong>M.S., Computer Science and Engineering</strong><span>BRAC University · 2025 · GPA: 3.73/4.00</span></div>
+      <div class="degree"><strong>B.S., Computer Science and Engineering</strong><span>BRAC University · 2022 · GPA: 3.74/4.00</span></div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <div class="contact-box">
+        <p><strong>Email:</strong> <a href="mailto:mapurba@uab.edu">mapurba@uab.edu</a><br>
+        <strong>Location:</strong> Birmingham, Alabama, USA</p>
+        <p>I welcome conversations about biomedical AI research, medical imaging, research collaborations, and relevant academic or industry research opportunities.</p>
+      </div>
+    </section>
   </div>
-</section>
 </main>
 
-<footer><div class="container foot"><span>© <span id="year">2026</span> Md Shifatul Ahsan Apurba.</span><span>Last updated August 2026 · GitHub Pages</span></div></footer>
-<script>
-const b=document.querySelector('.menu'),n=document.getElementById('nav');
-b.addEventListener('click',()=>{const o=n.classList.toggle('open');b.setAttribute('aria-expanded',String(o))});
-n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');b.setAttribute('aria-expanded','false')}));
-document.getElementById('year').textContent=new Date().getFullYear();
-</script>
+<footer class="footer"><div class="wrap"><span>© 2026 Md Shifatul Ahsan Apurba</span><span>Academic website · Last updated August 2026</span></div></footer>
 </body>
 </html>
