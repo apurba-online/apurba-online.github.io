@@ -40,10 +40,10 @@ img{display:block;max-width:100%}
 .button:hover{transform:translateY(-2px);border-color:#9cbab0;background:var(--sage-soft);color:var(--green-dark)}
 .button.primary{background:var(--ink);border-color:var(--ink);color:#fff}
 .button.primary:hover{background:var(--green-dark);border-color:var(--green-dark)}
-.hero-side{justify-self:end;width:min(100%,330px)}
+.hero-side{justify-self:end;width:min(100%,320px)}
 .portrait-frame{position:relative;padding:14px 14px 0 0}
-.portrait-frame:before{content:"";position:absolute;inset:0 0 14px 14px;background:var(--sage);border-radius:28px;z-index:-1}
-.portrait{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:24px;filter:saturate(.92)}
+.portrait-frame:before{content:"";position:absolute;inset:0 0 14px 14px;background:var(--sage);border-radius:26px;z-index:-1}
+.portrait{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 32%;border-radius:24px}
 .side-note{margin-top:20px;padding-left:4px;color:var(--muted);font-size:.88rem}
 .side-note strong{display:block;color:var(--ink);font-size:.96rem;margin-bottom:3px}
 
@@ -92,7 +92,7 @@ img{display:block;max-width:100%}
 .work-row a:hover{text-decoration:underline}
 
 .about-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px;align-items:start}
-.about-photo{border-radius:28px;width:100%;aspect-ratio:1/1;object-fit:cover}
+.about-photo{border-radius:24px;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 32%}
 .about-copy h2{margin:0;color:var(--ink);font-size:clamp(2.2rem,4.2vw,3.8rem);line-height:1.04;letter-spacing:-.05em}
 .about-copy p{font-size:1.03rem;margin:22px 0 0;max-width:650px}
 .about-links{display:flex;flex-wrap:wrap;gap:12px 22px;margin-top:28px}
