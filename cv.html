@@ -3,134 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Original curriculum vitae of Md Shifatul Ahsan Apurba.">
-  <meta name="author" content="Md Shifatul Ahsan Apurba">
-  <link rel="icon" type="image/png" href="assets/img/root/favicon.png">
-  <link rel="stylesheet" href="site.css">
+  <meta http-equiv="refresh" content="0; url=assets/cv/Md_Shifatul_Ahsan_Apurba_CV.pdf">
   <title>CV | Md Shifatul Ahsan Apurba</title>
-  <style>
-    .cv-page{padding:86px 0 96px}
-    .cv-intro{display:grid;grid-template-columns:110px 1fr;gap:34px;align-items:start}
-    .cv-intro h1{font-size:clamp(2.7rem,7vw,5.6rem);line-height:.94;letter-spacing:-.065em;margin:0 0 18px}
-    .cv-copy{max-width:680px;color:var(--muted);font-size:1.04rem}
-    .cv-actions{display:flex;gap:20px;flex-wrap:wrap;margin-top:22px}
-    .cv-actions a{font-weight:700;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:3px}
-    .cv-actions a:hover{color:var(--accent);border-color:var(--accent)}
-    .cv-viewer{margin-top:44px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff;min-height:78vh}
-    .cv-viewer iframe{display:block;width:100%;height:78vh;min-height:720px;border:0;background:#fff}
-    .cv-status{margin-top:12px;font-size:.78rem;color:var(--muted);letter-spacing:.02em}
-    .cv-error{padding:72px 20px;text-align:center;color:var(--muted)}
-    @media(max-width:800px){.cv-page{padding-top:56px}.cv-intro{grid-template-columns:1fr;gap:12px}.cv-viewer,.cv-viewer iframe{height:66vh;min-height:560px}}
-  </style>
+  <link rel="stylesheet" href="site.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="wrap navbar">
-    <a class="brand" href="./">Apurba Ahsan</a>
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="research.html">Research</a>
-      <a href="publications.html">Publications</a>
-      <a href="experience.html">Experience</a>
-      <a href="./#about">About</a>
-      <a class="active" href="cv.html" aria-current="page">CV</a>
-    </nav>
-  </div>
-</header>
-
-<main class="cv-page">
-  <div class="wrap">
-    <section class="cv-intro">
-      <div class="section-index">CV</div>
-      <div>
-        <p class="eyebrow">Curriculum Vitae</p>
-        <h1>Original CV.</h1>
-        <p class="cv-copy">This is the original PDF version of my curriculum vitae, shown directly rather than recreated as a web page.</p>
-        <div class="cv-actions">
-          <a id="openCV" href="#">Open PDF ↗</a>
-          <a id="downloadCV" href="#">Download PDF ↓</a>
-          <a href="./">Back to website</a>
-        </div>
-      </div>
-    </section>
-
-    <div class="cv-viewer" id="cvViewer">
-      <iframe id="cvFrame" title="Md Shifatul Ahsan Apurba curriculum vitae"></iframe>
+  <main class="wrap pdf-redirect">
+    <div>
+      <div class="kicker">Curriculum Vitae</div>
+      <h1>Opening CV…</h1>
+      <p>If the PDF does not open automatically, use the link below.</p>
+      <a class="pdf-link" href="assets/cv/Md_Shifatul_Ahsan_Apurba_CV.pdf">Open CV PDF ↗</a>
     </div>
-    <div class="cv-status" id="cvStatus">Loading original CV…</div>
-  </div>
-</main>
-
-<footer class="footer">
-  <div class="wrap footer-inner">
-    <span>© 2026 Md Shifatul Ahsan Apurba</span>
-    <div class="footer-links">
-      <a href="mailto:mapurba@uab.edu">Email</a>
-      <a href="https://scholar.google.com/citations?user=pu5cJSgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
-      <a href="https://github.com/apurba-online" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/mapurba" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
-  </div>
-</footer>
-
-<script>
-(() => {
-  const chunks = [
-    'assets/cv/chunks/part-00.txt',
-    'assets/cv/chunks/part-01.txt',
-    'assets/cv/chunks/part-02.txt',
-    'assets/cv/chunks/part-03.txt',
-    'assets/cv/chunks/part-04.txt',
-    'assets/cv/chunks/part-05.txt',
-    'assets/cv/chunks/part-06.txt',
-    'assets/cv/chunks/part-07.txt',
-    'assets/cv/chunks/part-08.txt',
-    'assets/cv/chunks/block-09-10.txt',
-    'assets/cv/chunks/block-11-14.txt',
-    'assets/cv/chunks/block-15-18.txt',
-    'assets/cv/chunks/block-19-22.txt',
-    'assets/cv/chunks/block-23-26.txt',
-    'assets/cv/chunks/block-27-30.txt',
-    'assets/cv/chunks/block-31-34.txt',
-    'assets/cv/chunks/block-35-38.txt'
-  ];
-
-  const status = document.getElementById('cvStatus');
-  const frame = document.getElementById('cvFrame');
-  const viewer = document.getElementById('cvViewer');
-  const openLink = document.getElementById('openCV');
-  const downloadLink = document.getElementById('downloadCV');
-
-  Promise.all(chunks.map(async path => {
-    const response = await fetch(path, {cache: 'force-cache'});
-    if (!response.ok) throw new Error(`Failed to load ${path}`);
-    return (await response.text()).trim();
-  }))
-  .then(parts => {
-    const base64 = parts.join('');
-    if (base64.length !== 152596) throw new Error(`CV data incomplete: ${base64.length}`);
-
-    const raw = atob(base64);
-    const bytes = new Uint8Array(raw.length);
-    for (let i = 0; i < raw.length; i++) bytes[i] = raw.charCodeAt(i);
-    if (bytes.length !== 114447) throw new Error(`CV byte-size check failed: ${bytes.length}`);
-
-    const pdfURL = URL.createObjectURL(new Blob([bytes], {type: 'application/pdf'}));
-    frame.src = pdfURL + '#view=FitH';
-    openLink.href = pdfURL;
-    openLink.target = '_blank';
-    openLink.rel = 'noopener';
-    downloadLink.href = pdfURL;
-    downloadLink.download = 'Md_Shifatul_Ahsan_Apurba_CV.pdf';
-    status.textContent = 'Original CV · PDF · 3 pages';
-  })
-  .catch(error => {
-    console.error(error);
-    viewer.innerHTML = '<div class="cv-error">The CV could not be loaded. Please email <a href="mailto:mapurba@uab.edu">mapurba@uab.edu</a> for a copy.</div>';
-    status.textContent = 'CV loading error';
-    openLink.style.display = 'none';
-    downloadLink.style.display = 'none';
-  });
-})();
-</script>
+  </main>
+  <script>window.location.replace('assets/cv/Md_Shifatul_Ahsan_Apurba_CV.pdf');</script>
 </body>
 </html>
