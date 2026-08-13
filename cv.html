@@ -3,38 +3,88 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Original curriculum vitae of Md Shifatul Ahsan Apurba.">
+  <meta name="description" content="Curriculum Vitae of Md Shifatul Ahsan Apurba, PhD Candidate at UAB working on generative AI, computer vision, imaging, and predictive models.">
+  <meta name="author" content="Md Shifatul Ahsan Apurba">
   <link rel="icon" type="image/png" href="assets/img/root/favicon.png">
   <link rel="stylesheet" href="site.css">
   <title>CV | Md Shifatul Ahsan Apurba</title>
   <style>
-    body{background:#f3f5f4}.cv-toolbar{position:sticky;top:0;z-index:120;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
-    .cv-toolbar .wrap{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}.cv-toolbar strong{color:var(--ink)}.cv-toolbar-actions{display:flex;gap:8px;flex-wrap:wrap}
-    .cv-viewer{width:min(1040px,calc(100% - 30px));height:calc(100vh - 92px);min-height:680px;margin:14px auto;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;box-shadow:var(--shadow-sm)}
-    .cv-viewer iframe{width:100%;height:100%;border:0}.cv-loading{height:100%;display:grid;place-items:center;color:var(--muted);padding:30px;text-align:center}
-    @media(max-width:680px){.cv-toolbar .wrap{align-items:flex-start;flex-direction:column;padding:12px 0}.cv-viewer{height:calc(100vh - 125px);min-height:560px}}
+    .cv-shell{padding:52px 0 88px;background:var(--cream)}
+    .cv-head{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:24px}
+    .cv-head h1{margin:0;color:var(--ink);font-size:clamp(2.3rem,5vw,4.2rem);line-height:1;letter-spacing:-.05em}
+    .cv-head p{margin:12px 0 0;color:var(--muted);max-width:720px}
+    .cv-actions{display:flex;flex-wrap:wrap;gap:10px}
+    .cv-viewer{background:#dfe4e1;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 18px 50px rgba(18,42,34,.10);min-height:760px}
+    .cv-viewer iframe{display:block;width:100%;height:82vh;min-height:760px;border:0;background:#fff}
+    .cv-fallback{display:none;min-height:760px;background:#fff;padding:54px;align-items:center;justify-content:center;text-align:center}
+    .cv-fallback-inner{max-width:620px}
+    .cv-fallback h2{margin:0 0 14px;color:var(--ink);font-size:2rem;letter-spacing:-.035em}
+    .cv-fallback p{color:var(--muted);margin:0 0 22px}
+    .cv-note{margin-top:14px;color:var(--muted);font-size:.86rem}
+    @media(max-width:760px){.cv-head{align-items:flex-start;flex-direction:column}.cv-shell{padding-top:34px}.cv-viewer,.cv-viewer iframe,.cv-fallback{min-height:70vh}.cv-viewer iframe{height:70vh}.cv-fallback{padding:32px 22px}}
   </style>
 </head>
 <body>
-<div class="cv-toolbar">
-  <div class="wrap">
-    <div><strong>Md Shifatul Ahsan Apurba</strong><div style="font-size:.8rem;color:var(--muted)">Original CV · PDF</div></div>
-    <div class="cv-toolbar-actions"><a class="button" href="./">← Website</a><a class="button primary" id="downloadCV" href="#">Download PDF</a></div>
+<header class="site-header">
+  <div class="wrap navbar">
+    <a class="brand" href="./"><span>Apurba Ahsan</span><small>AI Researcher</small></a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="./">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="experience.html">Experience</a>
+      <a class="active nav-cta" href="cv.html" aria-current="page">CV</a>
+    </nav>
   </div>
-</div>
-<main class="cv-viewer" id="viewer"><div class="cv-loading">Loading original CV…</div></main>
-<script src="cv-data-1.js"></script><script src="cv-data-2.js"></script><script src="cv-data-3.js"></script><script src="cv-data-4.js"></script>
+</header>
+
+<main class="cv-shell">
+  <div class="wrap">
+    <div class="cv-head">
+      <div>
+        <div class="eyebrow">Curriculum Vitae</div>
+        <h1>Original CV</h1>
+        <p>The PDF below is the original academic CV, presented directly rather than recreated as a web page.</p>
+      </div>
+      <div class="cv-actions">
+        <a class="button" href="./">← Home</a>
+        <a class="button primary" id="downloadCV" href="assets/cv/Md_Shifatul_Ahsan_Apurba_CV.pdf" download>Download PDF</a>
+      </div>
+    </div>
+
+    <div class="cv-viewer" id="cvViewer">
+      <iframe id="cvFrame" title="Md Shifatul Ahsan Apurba CV" src="assets/cv/Md_Shifatul_Ahsan_Apurba_CV.pdf#view=FitH"></iframe>
+      <div class="cv-fallback" id="cvFallback">
+        <div class="cv-fallback-inner">
+          <div class="eyebrow">PDF viewer</div>
+          <h2>Open the original CV PDF</h2>
+          <p>Your browser may not support an embedded PDF viewer. Use the button below to open the original CV directly.</p>
+          <a class="button primary" href="assets/cv/Md_Shifatul_Ahsan_Apurba_CV.pdf">Open PDF</a>
+        </div>
+      </div>
+    </div>
+    <p class="cv-note">For the best print quality, use the PDF download rather than printing the web page.</p>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>© 2026 Md Shifatul Ahsan Apurba</span>
+    <div class="footer-links">
+      <a href="mailto:mapurba@uab.edu">Email</a>
+      <a href="https://scholar.google.com/citations?user=pu5cJSgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
+      <a href="https://github.com/apurba-online" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/mapurba" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
 <script>
-(function(){
-  try{
-    const b64=(window.CV_PARTS||[]).join('');
-    const raw=atob(b64); const bytes=new Uint8Array(raw.length);
-    for(let i=0;i<raw.length;i++) bytes[i]=raw.charCodeAt(i);
-    const blob=new Blob([bytes],{type:'application/pdf'}); const url=URL.createObjectURL(blob);
-    const iframe=document.createElement('iframe'); iframe.title='Md Shifatul Ahsan Apurba CV'; iframe.src=url+'#view=FitH';
-    const viewer=document.getElementById('viewer'); viewer.innerHTML=''; viewer.appendChild(iframe);
-    const dl=document.getElementById('downloadCV'); dl.href=url; dl.download='Md_Shifatul_Ahsan_Apurba_CV.pdf';
-  }catch(e){document.getElementById('viewer').innerHTML='<div class="cv-loading">The PDF viewer could not load. Please refresh the page.</div>';}
-})();
+  const frame = document.getElementById('cvFrame');
+  const fallback = document.getElementById('cvFallback');
+  frame.addEventListener('error', () => {
+    frame.style.display = 'none';
+    fallback.style.display = 'flex';
+  });
 </script>
-</body></html>
+</body>
+</html>
