@@ -5,26 +5,25 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Md Shifatul Ahsan Apurba — PhD Candidate at UAB working on generative AI, computer vision, imaging, representation learning, and predictive models.">
   <meta name="author" content="Md Shifatul Ahsan Apurba">
-  <meta property="og:title" content="Md Shifatul Ahsan Apurba | Generative AI & Imaging Researcher">
-  <meta property="og:description" content="Personal research website of Md Shifatul Ahsan Apurba. Generative AI, imaging, computer vision, representation learning, and predictive modeling.">
+  <meta property="og:title" content="Md Shifatul Ahsan Apurba | Generative AI & Imaging">
+  <meta property="og:description" content="Research and engineering portfolio of Md Shifatul Ahsan Apurba, focused on generative AI, computer vision, imaging, and predictive modeling.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://apurba-online.github.io/me/">
-  <meta property="og:image" content="assets/img/profile/apurba-profile.jpg">
+  <meta property="og:image" content="https://apurba-online.github.io/me/assets/img/profile/apurba-profile.jpg">
   <link rel="icon" type="image/png" href="assets/img/root/favicon.png">
-  <link rel="stylesheet" href="personal.css">
+  <link rel="stylesheet" href="site.css">
   <title>Md Shifatul Ahsan Apurba | Generative AI & Imaging</title>
 </head>
 <body>
 <header class="site-header">
   <div class="wrap navbar">
-    <a class="brand" href="./">Apurba.</a>
+    <a class="brand" href="./">Apurba Ahsan <small>AI Researcher</small></a>
     <nav class="nav" aria-label="Primary navigation">
-      <a href="#work">Work</a>
-      <a href="#experience">Experience</a>
-      <a href="#papers">Papers</a>
-      <a href="#about">About</a>
+      <a href="./" aria-current="page">Home</a>
       <a href="research.html">Research</a>
-      <a class="cv" href="cv.html">CV</a>
+      <a href="publications.html">Publications</a>
+      <a href="experience.html">Experience</a>
+      <a class="cv-link" href="cv.html" target="_blank" rel="noopener">CV ↗</a>
     </nav>
   </div>
 </header>
@@ -32,45 +31,41 @@
 <main>
   <section class="wrap hero">
     <div>
-      <div class="hero-kicker">
-        <span>Generative AI</span>
-        <span>Imaging</span>
-        <span>Computer Vision</span>
-      </div>
-      <h1>I build AI systems that <span class="accent">learn from images.</span></h1>
+      <p class="eyebrow">Generative AI · Computer Vision · Imaging</p>
+      <h1>I build AI systems that <span>learn from images.</span></h1>
       <p class="hero-intro">I’m Md Shifatul Ahsan Apurba, a PhD Candidate at UAB working on generative models, image reconstruction, representation learning, and predictive AI.</p>
-      <p class="hero-role">Biomedical Health Informatics &amp; Data Science · University of Alabama at Birmingham · Birmingham, Alabama</p>
-      <div class="hero-actions">
-        <a class="button primary" href="#work">Explore my work</a>
-        <a class="button" href="cv.html">CV</a>
-        <a class="button" href="https://github.com/apurba-online" target="_blank" rel="noopener">GitHub ↗</a>
-        <a class="button" href="mailto:mapurba@uab.edu">Contact</a>
+      <p class="hero-meta">University of Alabama at Birmingham · Birmingham, Alabama · PhD expected 2028</p>
+      <div class="actions">
+        <a class="button primary" href="research.html">Research</a>
+        <a class="button" href="publications.html">Publications</a>
+        <a class="button" href="cv.html" target="_blank" rel="noopener">View CV ↗</a>
+      </div>
+      <div class="inline-links">
+        <a href="mailto:mapurba@uab.edu">Email</a>
+        <a href="https://scholar.google.com/citations?user=pu5cJSgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar ↗</a>
+        <a href="https://github.com/apurba-online" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/mapurba" target="_blank" rel="noopener">LinkedIn ↗</a>
       </div>
     </div>
-
     <aside class="hero-side">
-      <div class="portrait-frame">
-        <img class="portrait" src="assets/img/profile/apurba-profile.jpg" alt="Md Shifatul Ahsan Apurba" width="480" height="480" decoding="async" fetchpriority="high">
+      <div class="photo-shell">
+        <img class="profile-photo" src="assets/img/profile/apurba-profile.jpg" alt="Portrait of Md Shifatul Ahsan Apurba" width="800" height="800" fetchpriority="high" decoding="async">
       </div>
-      <div class="side-note">
-        <strong>PhD Candidate at UAB</strong>
-        Generative AI · Imaging · Vision · Research + Engineering
-      </div>
+      <div class="hero-note"><strong><span class="status-dot"></span>PhD Candidate at UAB</strong><span>Research + Engineering</span></div>
     </aside>
   </section>
 
-  <section class="section alt" id="work">
+  <section class="section soft">
     <div class="wrap">
       <div class="section-head">
         <div>
-          <div class="section-label">Selected work</div>
-          <h2 class="section-title">Research I care about.</h2>
-          <p class="section-lead">I work on AI systems that reconstruct images, learn useful representations, and support downstream prediction.</p>
+          <p class="section-label">Selected work</p>
+          <h2 class="section-title">Research with a clear technical purpose.</h2>
+          <p class="section-lead">My work connects generative modeling, image representation, and downstream prediction while keeping implementation and evaluation practical.</p>
         </div>
-        <a href="research.html">Research details →</a>
+        <a href="research.html">View all research →</a>
       </div>
-
-      <div class="feature">
+      <div class="feature-grid">
         <article class="feature-main">
           <div>
             <div class="meta">Featured research · ICIBM 2026 Oral</div>
@@ -78,26 +73,21 @@
             <p><strong>Region-Adaptive Conditional MeanFlow for CT Image Reconstruction.</strong> A generative reconstruction framework that combines Conditional MeanFlow with selective regional refinement.</p>
           </div>
           <div class="feature-links">
-            <a href="https://arxiv.org/abs/2605.00901" target="_blank" rel="noopener">Paper ↗</a>
+            <a href="https://arxiv.org/abs/2605.00901" target="_blank" rel="noopener">Read paper ↗</a>
             <a href="research.html#racmf">Project overview →</a>
           </div>
         </article>
-
-        <div class="feature-side">
-          <article class="work-note">
-            <div class="num">01 / REPRESENTATION</div>
-            <h4>Image representation learning</h4>
-            <p>Learning compact representations for downstream prediction and multimodal modeling.</p>
+        <div class="side-stack">
+          <article class="simple-card">
+            <div class="kicker">Representation learning</div>
+            <h3>From reconstruction to useful representations</h3>
+            <p>Studying global and local image representations for predictive and multimodal tasks.</p>
           </article>
-          <article class="work-note">
-            <div class="num">02 / PREDICTION</div>
-            <h4>Predictive AI</h4>
-            <p>Connecting image information and learned representations to useful prediction tasks.</p>
-          </article>
-          <article class="work-note">
-            <div class="num">03 / ENGINEERING</div>
-            <h4>End-to-end systems</h4>
-            <p>Building reproducible research pipelines with a software-engineering mindset.</p>
+          <article class="simple-card">
+            <div class="kicker">LLM project</div>
+            <h3>ChatAlchemy</h3>
+            <p>An AI-enabled assistant that retrieves structured PharmAlchemy information and analyzes uploaded literature.</p>
+            <a href="https://chatalchemy.netlify.app/" target="_blank" rel="noopener">Project website ↗</a>
           </article>
         </div>
       </div>
@@ -106,58 +96,27 @@
 
   <section class="section">
     <div class="wrap">
-      <div class="section-label">Focus</div>
-      <h2 class="section-title">Three directions, one theme.</h2>
+      <p class="section-label">Expertise</p>
+      <h2 class="section-title">Generative AI, vision, and engineering.</h2>
       <div class="focus-grid">
-        <article class="focus">
-          <h3>Generative imaging</h3>
-          <p>Flow-based and generative models for image reconstruction and transformation.</p>
-        </article>
-        <article class="focus">
-          <h3>Vision &amp; representation</h3>
-          <p>Global and local image representations that preserve task-relevant information.</p>
-        </article>
-        <article class="focus">
-          <h3>Predictive AI</h3>
-          <p>Imaging and multimodal representations for downstream risk and outcome prediction.</p>
-        </article>
+        <article class="focus-item"><h3>Generative imaging</h3><p>Flow matching, MeanFlow, diffusion models, GANs, image reconstruction, and reliability.</p></article>
+        <article class="focus-item"><h3>Vision &amp; representation</h3><p>Computer vision, global/local features, representation learning, CLIP, SigLIP, and multimodal modeling.</p></article>
+        <article class="focus-item"><h3>Predictive AI</h3><p>Imaging-derived prediction, radiomics, downstream evaluation, and model optimization.</p></article>
       </div>
-      <div class="tools-line"><strong>Core tools</strong><span>Python · PyTorch · TensorFlow · OpenCV · Flow Matching · MeanFlow · Diffusion Models · Reinforcement Learning · Transformers · SQL</span></div>
+      <div class="expertise-line"><strong>Core tools</strong><span>Python · PyTorch · TensorFlow · Scikit-learn · OpenCV · Transformers · Reinforcement Learning · SQL · Pandas · NumPy</span></div>
     </div>
   </section>
 
-  <section class="section soft" id="experience">
+  <section class="section sage" id="experience">
     <div class="wrap">
       <div class="section-head">
-        <div>
-          <div class="section-label">Selected experience</div>
-          <h2 class="section-title">Research and engineering.</h2>
-        </div>
+        <div><p class="section-label">Selected experience</p><h2 class="section-title">Research depth with engineering experience.</h2></div>
         <a href="experience.html">Full experience →</a>
       </div>
-
-      <div class="work-list compact-list">
-        <article class="work-row">
-          <div class="work-year">2024–Now</div>
-          <div>
-            <h3>Graduate Research Assistant · University of Alabama at Birmingham</h3>
-            <p>Generative AI, CT image reconstruction, representation learning, quantitative imaging, and predictive modeling.</p>
-          </div>
-        </article>
-        <article class="work-row">
-          <div class="work-year">2024</div>
-          <div>
-            <h3>Specialist, IT Core Applications · Robi Axiata PLC</h3>
-            <p>Telecom core applications, Linux systems, APIs, databases, automation, and capacity planning.</p>
-          </div>
-        </article>
-        <article class="work-row">
-          <div class="work-year">2023–24</div>
-          <div>
-            <h3>Associate Software Engineer · British American Tobacco Bangladesh</h3>
-            <p>Software and enterprise automation projects using Power Platform, ASP.NET, PHP frameworks, and ReactJS.</p>
-          </div>
-        </article>
+      <div class="list">
+        <article class="list-row no-link"><div class="list-year">2024–Now</div><div><h3>Graduate Research Assistant · University of Alabama at Birmingham</h3><p>Generative AI for CT reconstruction and medical image analysis, with work spanning model development, experimental design, quantitative evaluation, and manuscript preparation.</p></div></article>
+        <article class="list-row no-link"><div class="list-year">2024</div><div><h3>Specialist, IT Core Applications · Robi Axiata PLC</h3><p>Worked on telecom core applications, including a 20% capacity upgrade, 30% storage reduction in CDR mediation, and automated capacity planning.</p></div></article>
+        <article class="list-row no-link"><div class="list-year">2023–24</div><div><h3>Associate Software Engineer · British American Tobacco Bangladesh</h3><p>Launched 21 software/automation projects, with initiatives reported to save 11,000+ man-hours annually and support a citizen-development program reaching 700+ employees.</p></div></article>
       </div>
     </div>
   </section>
@@ -165,78 +124,38 @@
   <section class="section" id="papers">
     <div class="wrap">
       <div class="section-head">
-        <div>
-          <div class="section-label">Selected papers</div>
-          <h2 class="section-title">A few things I’ve published.</h2>
-        </div>
+        <div><p class="section-label">Selected publications</p><h2 class="section-title">Research across imaging, health, and computing.</h2></div>
         <a href="publications.html">All publications →</a>
       </div>
-
-      <div class="work-list">
-        <article class="work-row">
-          <div class="work-year">2026</div>
-          <div>
-            <h3>RA-CMF: Region-Adaptive Conditional MeanFlow for CT Image Reconstruction</h3>
-            <p>Md Shifatul Ahsan Apurba, Md Selim, Jin Chen · ICIBM 2026</p>
-          </div>
-          <a href="https://arxiv.org/abs/2605.00901" target="_blank" rel="noopener">arXiv ↗</a>
-        </article>
-        <article class="work-row">
-          <div class="work-year">2026</div>
-          <div>
-            <h3>A model to guide successful living with venous thromboembolism (VTE)</h3>
-            <p>Thrombosis Research, 258, 109585</p>
-          </div>
-          <a href="https://www.sciencedirect.com/science/article/pii/S0049384826000046" target="_blank" rel="noopener">Article ↗</a>
-        </article>
-        <article class="work-row">
-          <div class="work-year">2025</div>
-          <div>
-            <h3>Unveiling shadows: A data-driven insight on depression among Bangladeshi university students</h3>
-            <p>Heliyon, 11, e41110</p>
-          </div>
-          <a href="https://www.sciencedirect.com/science/article/pii/S2405844024171411" target="_blank" rel="noopener">Article ↗</a>
-        </article>
+      <div class="list">
+        <article class="list-row"><div class="list-year">2026</div><div><h3>RA-CMF: Region-Adaptive Conditional MeanFlow for CT Image Reconstruction <span class="badge">ICIBM 2026 Oral</span></h3><p>Md Shifatul Ahsan Apurba, Md Selim, Jin Chen</p></div><a href="https://arxiv.org/abs/2605.00901" target="_blank" rel="noopener">arXiv ↗</a></article>
+        <article class="list-row"><div class="list-year">2026</div><div><h3>A model to guide successful living with venous thromboembolism (VTE)</h3><p>Thrombosis Research, 258, 109585</p></div><a href="https://www.sciencedirect.com/science/article/pii/S0049384826000046" target="_blank" rel="noopener">Article ↗</a></article>
+        <article class="list-row"><div class="list-year">2025</div><div><h3>Unveiling shadows: A data-driven insight on depression among Bangladeshi university students</h3><p>Heliyon, 11, e41110</p></div><a href="https://www.sciencedirect.com/science/article/pii/S2405844024171411" target="_blank" rel="noopener">Article ↗</a></article>
       </div>
     </div>
   </section>
 
-  <section class="section soft" id="education">
-    <div class="wrap">
-      <div class="section-label">Education</div>
-      <h2 class="section-title">Academic background.</h2>
-      <div class="work-list compact-list education-list">
-        <article class="work-row">
-          <div class="work-year">2028</div>
-          <div><h3>PhD Candidate · University of Alabama at Birmingham</h3><p>Biomedical Health Informatics · GPA 4.00/4.00</p></div>
-        </article>
-        <article class="work-row">
-          <div class="work-year">2025</div>
-          <div><h3>M.S. Computer Science and Engineering · BRAC University</h3><p>GPA 3.73/4.00</p></div>
-        </article>
-        <article class="work-row">
-          <div class="work-year">2022</div>
-          <div><h3>B.S. Computer Science and Engineering · BRAC University</h3><p>GPA 3.74/4.00</p></div>
-        </article>
+  <section class="section soft">
+    <div class="wrap split">
+      <div>
+        <p class="section-label">Education</p>
+        <h2 class="subhead">Academic background</h2>
+        <div class="list">
+          <article class="list-row no-link"><div class="list-year">2028</div><div><h3>PhD Candidate · University of Alabama at Birmingham</h3><p>Biomedical Health Informatics · Current GPA 4.00/4.00</p></div></article>
+          <article class="list-row no-link"><div class="list-year">2025</div><div><h3>M.S. Computer Science and Engineering · BRAC University</h3><p>GPA 3.73/4.00</p></div></article>
+          <article class="list-row no-link"><div class="list-year">2022</div><div><h3>B.S. Computer Science and Engineering · BRAC University</h3><p>GPA 3.74/4.00</p></div></article>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <section class="section" id="about">
-    <div class="wrap about-grid">
-      <img class="about-photo" src="assets/img/profile/apurba-profile.jpg" alt="Portrait of Md Shifatul Ahsan Apurba" width="480" height="480" loading="lazy" decoding="async">
       <div class="about-copy">
-        <div class="section-label">About me</div>
-        <h2>Researcher by curiosity, engineer by training.</h2>
-        <p>I’m a PhD Candidate at UAB working across generative AI, imaging, computer vision, and predictive modeling.</p>
-        <p>Before my PhD, I worked in software engineering and enterprise technology. I still enjoy building complete systems, not only training models.</p>
-        <div class="about-links">
+        <p class="section-label">Background</p>
+        <h2 class="subhead">Researcher by curiosity, engineer by training.</h2>
+        <p>My current work sits at the intersection of generative AI, imaging, computer vision, and predictive modeling. Before starting my PhD, I worked in software engineering and telecom systems, which continues to shape how I approach reproducibility and end-to-end implementation.</p>
+        <div class="quick-links">
           <a href="research.html">Research →</a>
           <a href="experience.html">Experience →</a>
-          <a href="cv.html">CV →</a>
+          <a href="cv.html" target="_blank" rel="noopener">Original CV ↗</a>
           <a href="https://github.com/apurba-online" target="_blank" rel="noopener">GitHub ↗</a>
-          <a href="https://scholar.google.com/citations?user=pu5cJSgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar ↗</a>
-          <a href="https://www.linkedin.com/in/mapurba" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://scholar.google.com/citations?user=pu5cJSgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar ↗</a>
         </div>
       </div>
     </div>
@@ -244,23 +163,14 @@
 </main>
 
 <section class="contact" id="contact">
-  <div class="wrap contact-inner">
+  <div class="wrap contact-grid">
     <h2>Have an interesting AI or imaging problem? <span>Let’s talk.</span></h2>
     <div>
       <p>I welcome conversations about generative AI, computer vision, imaging, research collaborations, and relevant academic or industry research opportunities.</p>
-      <div class="contact-links">
-        <a href="mailto:mapurba@uab.edu">mapurba@uab.edu</a>
-        <a href="https://www.linkedin.com/in/mapurba" target="_blank" rel="noopener">LinkedIn ↗</a>
-      </div>
+      <div class="inline-links"><a href="mailto:mapurba@uab.edu">mapurba@uab.edu</a><a href="https://www.linkedin.com/in/mapurba" target="_blank" rel="noopener">LinkedIn ↗</a></div>
     </div>
   </div>
 </section>
-
-<footer class="footer">
-  <div class="wrap footer-inner">
-    <span>© 2026 Md Shifatul Ahsan Apurba</span>
-    <span>Generative AI · Imaging · Vision</span>
-  </div>
-</footer>
+<footer class="footer"><div class="wrap footer-inner"><span>© 2026 Md Shifatul Ahsan Apurba</span><span>Generative AI · Imaging · Vision</span></div></footer>
 </body>
 </html>
