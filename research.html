@@ -1,10 +1,286 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Research by Md Shifatul Ahsan Apurba in generative AI, imaging, computer vision, representation learning, and predictive modeling."><link rel="stylesheet" href="site.css"><link rel="stylesheet" href="icons.css"><title>Research | Md Shifatul Ahsan Apurba</title></head><body>
-<header class="site-header"><div class="wrap navbar"><a class="brand" href="./">Apurba Ahsan</a><nav class="nav"><a href="./">Home</a><a href="research.html" aria-current="page">Research</a><a href="publications.html">Publications</a><a href="experience.html">Experience</a><a href="assets/cv/Md_Shifatul_Ahsan_Apurba_CV.pdf" target="_blank" rel="noopener">CV</a></nav></div></header>
-<main><section class="wrap page-hero"><div class="kicker">Research</div><h1>Generative AI for Images, Representations, and Prediction</h1><p>I develop methods at the intersection of generative modeling, computer vision, imaging, and predictive AI. My work emphasizes faithful reconstruction, useful representation learning, and careful quantitative evaluation.</p></section>
-<section class="page-section"><div class="wrap">
-<article class="project" id="racmf"><div class="project-num">01 / Featured</div><div><h2>RA-CMF</h2><p><strong>Region-Adaptive Conditional MeanFlow for CT Image Reconstruction.</strong> RA-CMF combines a Conditional MeanFlow reconstruction backbone with region-adaptive refinement so the system can apply additional correction where it is most useful while maintaining global image fidelity.</p><div class="tags"><span class="tag">MeanFlow</span><span class="tag">Generative Imaging</span><span class="tag">CT Reconstruction</span><span class="tag">Region Adaptation</span><span class="tag">Radiomics</span></div><p><a class="icon-link" href="https://arxiv.org/abs/2605.00901" target="_blank" rel="noopener"><strong>Paper</strong><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#external"></use></svg></a> &nbsp; · &nbsp; ICIBM 2026 Regular Oral Presentation</p></div></article>
-<article class="project" id="representation"><div class="project-num">02 / Ongoing</div><div><h2>Image Representation Learning</h2><p>I am interested in learning compact image representations that combine global context with informative local regions and can be transferred to downstream prediction or multimodal modeling.</p><div class="tags"><span class="tag">Representation Learning</span><span class="tag">Global-Local Context</span><span class="tag">Self-Supervised Learning</span><span class="tag">Multimodal AI</span></div></div></article>
-<article class="project" id="predictive"><div class="project-num">03 / Ongoing</div><div><h2>Radiomics &amp; Predictive Modeling</h2><p>This direction studies how acquisition and reconstruction affect quantitative image features, how reliable those features remain after reconstruction, and how imaging information can support downstream risk and outcome prediction.</p><div class="tags"><span class="tag">Radiomics</span><span class="tag">Predictive Modeling</span><span class="tag">Quantitative Imaging</span><span class="tag">Reliability</span></div></div></article>
-<article class="project"><div class="project-num">Methods</div><div><h2>Methods I Work With</h2><p>Flow matching and MeanFlow, diffusion and other generative models, reinforcement learning, representation learning, medical image processing, radiomics, multimodal modeling, and predictive machine learning.</p></div></article>
-</div></section></main>
-<footer class="footer"><div class="wrap"><span>© 2026 Md Shifatul Ahsan Apurba</span><span><a href="mailto:mapurba@uab.edu"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#mail"></use></svg>mapurba@uab.edu</a></span></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Current research by Md Shifatul Ahsan Apurba on RA-CMF, Conditional MeanFlow, region-adaptive reinforcement learning, CT reconstruction, image representation learning, radiomics, and predictive modeling.">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="icons.css">
+  <link rel="stylesheet" href="research.css">
+  <title>Current Research | Md Shifatul Ahsan Apurba</title>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap navbar">
+    <a class="brand" href="./"><span>Md Shifatul Ahsan</span> <span class="brand-accent">Apurba</span></a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="./">Home</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="experience.html">Experience</a>
+      <a href="assets/cv/Md_Shifatul_Ahsan_Apurba_CV.pdf" target="_blank" rel="noopener">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="wrap page-hero research-hero">
+  <div class="kicker">Current Research</div>
+  <h1>CT Reconstruction, Representation Learning, and Predictive Imaging</h1>
+  <p class="research-hero-copy">My current research focuses on generative AI for thoracic CT, with an emphasis on reconstructing images across acquisition and reconstruction differences while preserving anatomy, subtle texture, and quantitative radiomic information. The central framework is <strong>RA-CMF: Region-Adaptive Conditional MeanFlow</strong>, which combines global Conditional MeanFlow reconstruction with reinforcement-learning-driven spatial refinement.</p>
+  <div class="research-meta">
+    <span><strong>Primary area:</strong> Generative medical imaging</span>
+    <span><strong>Core framework:</strong> RA-CMF</span>
+    <span><strong>Current extensions:</strong> Image representation + predictive modeling</span>
+  </div>
+</section>
+
+<div class="wrap research-toc" aria-label="Research page sections">
+  <a href="#program">Research Program</a>
+  <a href="#racmf">RA-CMF</a>
+  <a href="#data">Data & Task</a>
+  <a href="#meanflow">Conditional MeanFlow</a>
+  <a href="#regional">Regional RL</a>
+  <a href="#evaluation">Evaluation</a>
+  <a href="#representation">Representation Learning</a>
+  <a href="#directions">Current Directions</a>
+</div>
+
+<section class="wrap research-section" id="program">
+  <div class="research-section-head">
+    <div class="research-eyebrow">01 / Research Program</div>
+    <h2>Reliable generative imaging before downstream prediction</h2>
+  </div>
+  <div class="research-copy">
+    <p class="research-lede">A major problem in quantitative CT analysis is that the same anatomy can appear differently because of reconstruction kernels, acquisition protocols, scanner settings, noise characteristics, and other technical factors. These differences can affect visual texture and quantitative measurements even when the underlying anatomy has not changed.</p>
+    <p>My research addresses this problem in stages. First, I study how to reconstruct a source CT image into a target reconstruction domain while retaining patient-specific anatomy. Second, I study whether the learned reconstruction process itself can provide useful image representations. Third, I am interested in using those representations for patient-level predictive modeling and multimodal analysis.</p>
+    <p>The guiding idea is that reconstruction should not simply optimize pixel similarity. It should preserve clinically relevant structure, subtle texture, noise behavior, and radiomic consistency so that the resulting images remain useful for quantitative analysis.</p>
+  </div>
+</section>
+
+<section class="wrap research-section" id="racmf">
+  <div class="research-section-head">
+    <div class="research-eyebrow">02 / Featured Framework</div>
+    <h2>RA-CMF: Region-Adaptive Conditional MeanFlow for CT Image Reconstruction</h2>
+  </div>
+
+  <div class="framework-summary">
+    <div class="research-copy">
+      <p class="research-lede">RA-CMF is a two-stage reconstruction framework. The first stage performs a strong global reconstruction using a Conditional MeanFlow U-Net. The second stage uses a reinforcement-learning controller to decide where additional local refinement is useful, how much refinement should be applied, and when the process should stop.</p>
+      <p>The motivation is simple: reconstruction difficulty is not spatially uniform. Large portions of a CT slice may already be reconstructed well after the global stage, while smaller regions around complex lung structure, tumor-adjacent tissue, boundaries, or subtle texture may still benefit from additional correction. Applying the same amount of iterative refinement everywhere can waste computation and can also destabilize regions that were already correct.</p>
+      <p>RA-CMF therefore treats refinement as a spatial decision problem rather than a fixed post-processing step. The MeanFlow backbone learns the overall source-to-target transformation, while the policy controller learns how to allocate additional computation selectively.</p>
+      <div class="research-links">
+        <a href="https://arxiv.org/abs/2605.00901" target="_blank" rel="noopener"><strong>RA-CMF Paper</strong><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#external"></use></svg></a>
+        <span>ICIBM 2026 · Regular Oral Presentation</span>
+      </div>
+    </div>
+
+    <div class="framework-facts" aria-label="RA-CMF quick facts">
+      <div class="framework-fact"><span>Input</span><strong>Source-domain 2D thoracic CT slice</strong></div>
+      <div class="framework-fact"><span>Target</span><strong>Paired target-domain reconstruction of the same anatomy</strong></div>
+      <div class="framework-fact"><span>Stage 1</span><strong>Conditional MeanFlow global reconstruction</strong></div>
+      <div class="framework-fact"><span>Stage 2</span><strong>Region-adaptive reinforcement learning refinement</strong></div>
+      <div class="framework-fact"><span>Priority</span><strong>Anatomy, subtle texture, radiomic consistency, and stability</strong></div>
+    </div>
+  </div>
+
+  <div class="pipeline" aria-label="RA-CMF processing pipeline">
+    <div class="pipeline-step">
+      <div class="pipeline-num">01</div>
+      <h3>Paired CT input</h3>
+      <p>A non-target reconstruction and its paired target reconstruction provide aligned examples of how the same anatomy should appear across reconstruction domains.</p>
+    </div>
+    <div class="pipeline-step">
+      <div class="pipeline-num">02</div>
+      <h3>Global MeanFlow reconstruction</h3>
+      <p>The Conditional MeanFlow U-Net models a continuous transformation and predicts image-conditioned flow information from intermediate image states while conditioning on the source CT.</p>
+    </div>
+    <div class="pipeline-step">
+      <div class="pipeline-num">03</div>
+      <h3>Regional policy decisions</h3>
+      <p>A policy network observes the reconstruction process and identifies spatial regions that still justify extra refinement rather than applying the same computation uniformly across the slice.</p>
+    </div>
+    <div class="pipeline-step">
+      <div class="pipeline-num">04</div>
+      <h3>Budgeted local refinement</h3>
+      <p>The controller allocates local refinement effort, manages a global computation budget, and uses stopping behavior to avoid unnecessary or unstable updates.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap research-section" id="data">
+  <div class="research-section-head">
+    <div class="research-eyebrow">03 / Data & Task</div>
+    <h2>Patient-separated paired thoracic CT reconstruction</h2>
+  </div>
+  <div class="research-copy">
+    <p class="research-lede">The RA-CMF experiments use paired thoracic CT images so that the model learns from two reconstructions of the same underlying anatomy rather than from unrelated scans.</p>
+    <p>For the main paired dataset, the source and target slices are matched within the same patient and imaging session. The study uses GE reconstruction domains, with the GE Standard reconstruction serving as the source domain and the GE Lung reconstruction serving as the target domain. Pair construction also respects slice thickness and spatial alignment so that the learning objective reflects reconstruction differences rather than anatomical mismatch.</p>
+  </div>
+
+  <div class="detail-grid">
+    <div class="detail-item">
+      <h3>Patient-level splitting</h3>
+      <p><strong>17 patients</strong> are used for training, <strong>4</strong> for validation, and <strong>2</strong> for testing. Slices from one patient are not shared across different data splits.</p>
+    </div>
+    <div class="detail-item">
+      <h3>Paired 2D training</h3>
+      <p>The main experiments use approximately <strong>15,000 training pairs</strong>, <strong>3,000 validation pairs</strong>, and <strong>1,500 test pairs</strong>. Individual 2D slices are processed independently by the model.</p>
+    </div>
+    <div class="detail-item">
+      <h3>Pairing constraints</h3>
+      <p>Pairs are formed from the same patient and session, with matching spatial position and supported slice thicknesses of <strong>1.25 mm or 2.5 mm</strong>.</p>
+    </div>
+    <div class="detail-item">
+      <h3>Tumor ROI evaluation</h3>
+      <p>A separate annotated tumor subset is used to test whether reconstruction quality and radiomic reliability are preserved specifically within clinically important regions.</p>
+    </div>
+  </div>
+
+  <div class="research-callout">
+    <h3>Why the patient-level split matters</h3>
+    <p>Neighboring CT slices from the same patient are highly correlated. For that reason, the train, validation, and test partitions are defined at the patient level even though the reconstruction model itself operates on individual slices.</p>
+  </div>
+</section>
+
+<section class="wrap research-section" id="meanflow">
+  <div class="research-section-head">
+    <div class="research-eyebrow">04 / Stage One</div>
+    <h2>Conditional MeanFlow learns the global reconstruction trajectory</h2>
+  </div>
+  <div class="research-copy">
+    <p class="research-lede">The first stage is not a direct one-shot image-to-image mapping. RA-CMF uses a Conditional MeanFlow formulation to model the transformation dynamics between intermediate image states and the target reconstruction domain.</p>
+    <p>The backbone is a Conditional MeanFlow U-Net. It receives an intermediate state of the evolving image together with conditioning information from the source CT and predicts an image-sized average-velocity field. That velocity field describes how the current image state should move through the reconstruction trajectory.</p>
+    <p>Training combines MeanFlow consistency with image reconstruction supervision. The objective encourages the predicted transformation dynamics to remain consistent while also requiring the final reconstructed image to match the paired target. Conditioning on the source CT is important because it anchors the generative transformation to the patient's actual anatomy rather than allowing unconstrained image synthesis.</p>
+  </div>
+
+  <ul class="method-list">
+    <li><strong>Conditional input</strong><span>The source CT remains available to the network throughout the reconstruction process so the trajectory is tied to the observed anatomy.</span></li>
+    <li><strong>Intermediate states</strong><span>The model reasons about states along the reconstruction trajectory rather than learning only a single direct source-to-target output.</span></li>
+    <li><strong>Velocity prediction</strong><span>The U-Net predicts spatially resolved average-velocity information with the same image geometry as the CT slice.</span></li>
+    <li><strong>Global role</strong><span>This stage performs the main reconstruction and provides a strong baseline output before any regional refinement is requested.</span></li>
+  </ul>
+</section>
+
+<section class="wrap research-section" id="regional">
+  <div class="research-section-head">
+    <div class="research-eyebrow">05 / Stage Two</div>
+    <h2>Reinforcement learning controls where refinement is worth the cost</h2>
+  </div>
+  <div class="research-copy">
+    <p class="research-lede">The regional stage is designed around the observation that some spatial locations remain more difficult than others after global MeanFlow reconstruction. Instead of refining every location equally, a policy controller learns how to spend a limited refinement budget.</p>
+    <p>The MeanFlow backbone is kept fixed while the controller learns decisions from the reconstruction rollouts. The controller can select spatial tiles, determine local refinement effort, manage a global refinement budget, and learn stopping behavior. This turns the second stage into a sequential decision problem: an action is useful only when the expected quality gain is large enough to justify additional computation and does not introduce instability.</p>
+    <p>The reward design therefore balances reconstruction improvement with cost. Current experiments prioritize subtle texture and local fidelity rather than aggressive edge sharpening. The goal is to make small, targeted corrections in regions that still differ from the target while leaving already-correct anatomy unchanged.</p>
+  </div>
+
+  <div class="detail-grid">
+    <div class="detail-item">
+      <h3>Tile selection</h3>
+      <p>The policy identifies spatial regions that should receive additional refinement based on the current reconstruction state and rollout information.</p>
+    </div>
+    <div class="detail-item">
+      <h3>Local step budget</h3>
+      <p>Selected regions can receive different amounts of refinement rather than using a single fixed number of local updates everywhere.</p>
+    </div>
+    <div class="detail-item">
+      <h3>Global budget</h3>
+      <p>The policy also limits total refinement effort across the slice so the method does not spend computation where the expected benefit is small.</p>
+    </div>
+    <div class="detail-item">
+      <h3>Stopping & stability</h3>
+      <p>Stopping behavior and inference safeguards are used to avoid unnecessary updates and to reject changes that reduce reconstruction quality.</p>
+    </div>
+  </div>
+
+  <div class="research-callout">
+    <h3>Why reinforcement learning?</h3>
+    <p>The decision is not simply “which patch looks different?” The controller must jointly reason about region selection, how much extra computation to allocate, whether another refinement step is beneficial, and when to stop. Reinforcement learning provides a natural framework for optimizing these sequential tradeoffs.</p>
+  </div>
+</section>
+
+<section class="wrap research-section" id="evaluation">
+  <div class="research-section-head">
+    <div class="research-eyebrow">06 / Evaluation</div>
+    <h2>Evaluation goes beyond global pixel similarity</h2>
+  </div>
+  <div class="research-copy">
+    <p class="research-lede">A reconstructed CT image can achieve good global similarity while still altering subtle local texture or quantitative features. I therefore evaluate RA-CMF at multiple levels: whole-image quality, tumor-region quality, radiomic consistency, and noise behavior.</p>
+  </div>
+
+  <ul class="method-list">
+    <li><strong>Full-image quality</strong><span>PSNR and SSIM measure global reconstruction similarity over the complete CT slice.</span></li>
+    <li><strong>Tumor ROI quality</strong><span>ROI-level PSNR and SSIM test whether the reconstruction remains accurate in clinically important regions rather than only in large homogeneous areas.</span></li>
+    <li><strong>Radiomic reliability</strong><span>Concordance correlation coefficient (CCC) is computed across radiomic feature families including first-order, GLCM, GLRLM, GLSZM, GLDM, and NGTDM features.</span></li>
+    <li><strong>Noise behavior</strong><span>Noise power spectrum analysis is used to examine whether the reconstructed texture and noise characteristics move toward the target-domain behavior.</span></li>
+  </ul>
+
+  <div class="metric-strip" aria-label="Published RA-CMF results">
+    <div class="metric"><span class="metric-value">34.23 ± 1.71</span><span class="metric-label">Full-image PSNR</span></div>
+    <div class="metric"><span class="metric-value">0.95 ± 0.01</span><span class="metric-label">Full-image SSIM</span></div>
+    <div class="metric"><span class="metric-value">0.96</span><span class="metric-label">Overall tumor-ROI radiomic CCC</span></div>
+    <div class="metric"><span class="metric-value">31.30 ± 4.16</span><span class="metric-label">Tumor-ROI PSNR in the public arXiv version</span></div>
+  </div>
+  <p class="metric-note">These values summarize the currently public RA-CMF arXiv/ICIBM version. Ongoing experiments continue to extend the evaluation, including stronger baselines, uncertainty reporting, pathology-preservation analysis, and downstream validation.</p>
+</section>
+
+<section class="wrap research-section" id="representation">
+  <div class="research-section-head">
+    <div class="research-eyebrow">07 / Ongoing Extension</div>
+    <h2>Learning compact CT representations from the RA-CMF reconstruction process</h2>
+  </div>
+  <div class="research-copy">
+    <p class="research-lede">My current work extends RA-CMF beyond reconstruction. The central question is whether the internal features and region-selection behavior learned during reconstruction can be converted into a compact representation of a CT slice that is useful for similarity, retrieval, patient modeling, and downstream prediction.</p>
+    <p>The current representation pipeline freezes the trained RA-CMF reconstruction system and trains a separate representation head. Features are collected from multiple levels of the MeanFlow U-Net and from different points along the reconstruction trajectory. Global slice information is combined with features from regions selected as informative by the regional controller.</p>
+    <p>A CLS-like learnable aggregation mechanism combines one global token with selected regional tokens into a compact embedding. The current implementation produces a 512-dimensional late-trajectory representation and uses a VICReg-style objective to align representations across intermediate trajectory states and the paired target reconstruction while avoiding collapsed embeddings.</p>
+  </div>
+
+  <div class="extension-grid">
+    <div class="extension-item"><span>01 / Frozen reconstruction</span><h3>Preserve RA-CMF behavior</h3><p>The reconstruction backbone and controller remain frozen so representation learning does not change the already-trained reconstruction model.</p></div>
+    <div class="extension-item"><span>02 / Global + regional tokens</span><h3>Use what the controller finds important</h3><p>Global context is combined with selected local regions so the embedding is not dominated only by whole-image averaging.</p></div>
+    <div class="extension-item"><span>03 / Trajectory consistency</span><h3>Align multiple reconstruction views</h3><p>Intermediate, late, and paired-target views provide multiple related representations of the same underlying anatomy for self-supervised alignment.</p></div>
+  </div>
+
+  <div class="research-callout">
+    <h3>What the embedding means</h3>
+    <p>The learned vector is not intended to be a manually interpretable list of clinical measurements. It is a learned fingerprint of the CT slice, designed so that information distributed across the reconstruction trajectory and spatial regions can be transferred to downstream models.</p>
+  </div>
+</section>
+
+<section class="wrap research-section" id="directions">
+  <div class="research-section-head">
+    <div class="research-eyebrow">08 / Current Directions</div>
+    <h2>From reconstructed slices to patient-level multimodal prediction</h2>
+  </div>
+  <div class="research-copy">
+    <p class="research-lede">The broader direction of this work is to connect reconstruction, representation learning, and prediction rather than treating them as unrelated tasks.</p>
+  </div>
+
+  <div class="detail-grid">
+    <div class="detail-item">
+      <h3>Patient-level CT representation</h3>
+      <p>Aggregate information across multiple slices so the model can move from a single-slice embedding toward a representation of the complete patient CT study.</p>
+    </div>
+    <div class="detail-item">
+      <h3>Multimodal modeling</h3>
+      <p>Combine imaging representations with clinical context, including clinical notes and other patient information, to build richer patient-level models.</p>
+    </div>
+    <div class="detail-item">
+      <h3>Downstream prediction</h3>
+      <p>Evaluate whether reconstructed and learned imaging representations improve risk, outcome, survival-related, and early-detection modeling rather than relying only on reconstruction metrics.</p>
+    </div>
+    <div class="detail-item">
+      <h3>Generalization & safety</h3>
+      <p>Extend validation across larger cohorts, additional acquisition settings and scanner vendors, and explicitly study whether subtle pathological findings remain unchanged after reconstruction.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>© 2026 Md Shifatul Ahsan Apurba</span>
+    <span><a href="mailto:mapurba@uab.edu"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#mail"></use></svg>mapurba@uab.edu</a></span>
+  </div>
+</footer>
+</body>
+</html>
