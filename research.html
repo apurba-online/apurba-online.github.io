@@ -101,9 +101,9 @@
   </div>
 
   <figure class="research-figure figure-featured">
-    <img src="https://arxiv.org/html/2605.00901v1/figures/RA-CMF_ARCH.png" alt="RA-CMF framework showing Conditional MeanFlow reconstruction, RL-based refinement mask generation, region-adaptive refinement, PPO supervision, and final RA-CMF output." loading="lazy">
+    <img src="assets/img/papers/RA-CMF-FIGS-RA-CMF_V3%20(1).png" alt="RA-CMF framework showing Conditional MeanFlow reconstruction, RL-based refinement mask generation, region-adaptive refinement, PPO supervision, and final RA-CMF output." loading="lazy">
     <figcaption>
-      <strong>RA-CMF framework.</strong> This is the original framework figure from the public RA-CMF paper. The Conditional MeanFlow core provides the global reconstruction. The RL-based refinement controller estimates spatial selection, local micro-step budget, global budget, and early stopping. Selected regions are refined through a soft-gated adaptive loop, and the policy is optimized using an actor-critic PPO objective.
+      <strong>RA-CMF framework.</strong> The Conditional MeanFlow core provides the global reconstruction. The RL-based refinement controller then estimates spatial selection, local micro-step budget, global budget, and early stopping. Selected regions are refined through a soft-gated adaptive loop, and the policy is optimized using an actor-critic PPO objective.
     </figcaption>
   </figure>
 
@@ -190,9 +190,9 @@
   </div>
 
   <figure class="research-figure">
-    <img src="https://arxiv.org/html/2605.00901v1/figures/CMF_ARCH.png" alt="Detailed Conditional MeanFlow U-Net core with source, target, current state, time conditioning, residual blocks, skip connections, predicted velocity field, and reconstructed CT output." loading="lazy">
+    <img src="assets/img/papers/CMF_BB_V1.png" alt="Detailed Conditional MeanFlow U-Net core with source, target, current state, time conditioning, residual blocks, skip connections, predicted velocity field, and reconstructed CT output." loading="lazy">
     <figcaption>
-      <strong>Conditional MeanFlow core.</strong> This is the original architecture figure from the public RA-CMF paper. Source conditioning, current state, and time/reference-time information are combined through the U-Net. Residual blocks receive the time-conditioning embedding, and the model predicts the velocity field used to update the current state toward the target reconstruction.
+      <strong>Conditional MeanFlow core.</strong> Source conditioning, current state, and time/reference-time information are combined through the U-Net. Residual blocks receive the time-conditioning embedding, and the model predicts the velocity field used to update the current state toward the target reconstruction.
     </figcaption>
   </figure>
 
@@ -270,15 +270,15 @@
 <section class="wrap research-section" id="qualitative">
   <div class="research-section-head">
     <div class="research-eyebrow">07 / Qualitative Results</div>
-    <h2>Published visual reconstruction example</h2>
+    <h2>Visual reconstruction examples across multiple baselines</h2>
   </div>
 
   <div class="research-copy">
     <p class="research-lede">
-      This qualitative example comes directly from the public RA-CMF paper and compares the same tumor region across the target, input, baseline, STAN-CT, Conditional MeanFlow, and RA-CMF reconstructions.
+      The qualitative comparisons below place the GE Lung target next to the GE Standard input, a CNN-based method, STAN-CT, RadiomicGAN, Conditional MeanFlow, and RA-CMF. The magnified regions highlight local lung and lesion structure where reconstruction differences are easier to inspect.
     </p>
     <p>
-      The side-by-side view is useful because global metrics can hide local differences. Looking at the same ROI across methods makes it easier to inspect whether lesion structure and surrounding texture remain consistent with the target reconstruction.
+      These examples are useful because whole-image metrics alone can hide local differences. The cropped regions allow direct inspection of texture, lesion appearance, and fine pulmonary structures.
     </p>
   </div>
 
@@ -290,7 +290,7 @@
     <figure class="result-panel"><img src="https://arxiv.org/html/2605.00901v1/figures/roi_cmf.png" alt="Conditional MeanFlow reconstruction from the published RA-CMF comparison." loading="lazy"><figcaption>Conditional MeanFlow</figcaption></figure>
     <figure class="result-panel"><img src="https://arxiv.org/html/2605.00901v1/figures/roi_ra-cmf.png" alt="RA-CMF reconstruction from the published RA-CMF comparison." loading="lazy"><figcaption>RA-CMF</figcaption></figure>
   </div>
-  <p class="figure-note">Published qualitative example from the RA-CMF paper. No recreated or generated research images are used on this page.</p>
+  <p class="figure-note">Published qualitative example from the RA-CMF paper. The two newer full-width qualitative comparison panels are not yet present in <code>assets/img/papers/</code>.</p>
 </section>
 
 <section class="wrap research-section" id="quantitative">
@@ -340,6 +340,11 @@
       </tbody>
     </table>
   </div>
+
+  <figure class="research-figure result-table-figure">
+    <img src="assets/img/papers/image.png" alt="Updated RA-CMF quantitative result table image." loading="lazy">
+    <figcaption><strong>Updated result table.</strong> The same current values are shown above as an accessible HTML table and retained here in the original visual format.</figcaption>
+  </figure>
 </section>
 
 <section class="wrap research-section" id="representation">
