@@ -219,7 +219,7 @@
         Full-image PSNR and SSIM measure overall reconstruction fidelity. Tumor-region PSNR and SSIM examine local quality. Radiomic concordance correlation coefficient measures how consistently quantitative features are recovered across first-order and texture feature families. Noise power spectrum analysis is used to study whether the reconstructed noise and texture behavior moves toward the target domain.
       </p>
       <p>
-        In the current evaluation, RA-CMF improves over the Conditional MeanFlow backbone in tumor-region quality and full-image reconstruction while maintaining strong radiomic consistency.
+        In the current evaluation, RA-CMF improves over the comparison methods in tumor-region quality and full-image reconstruction while maintaining strong radiomic consistency.
       </p>
     </div>
 
@@ -237,22 +237,63 @@
     <figcaption><strong>Updated qualitative comparison.</strong> Representative reconstruction results comparing the target reference, source input, comparison methods, Conditional MeanFlow, and RA-CMF.</figcaption>
   </figure>
 
-  <figure class="story-figure figure-plain">
-    <img src="assets/img/papers/image_table.png" alt="Updated quantitative RA-CMF result table." loading="lazy" decoding="async">
-    <figcaption><strong>Updated quantitative results.</strong> Current comparison across ROI radiomic consistency, ROI image quality, and full-image reconstruction quality.</figcaption>
-  </figure>
-
-  <div class="table-wrap" role="region" aria-label="Accessible summary of current RA-CMF results" tabindex="0">
+  <div class="table-wrap" role="region" aria-label="Current quantitative RA-CMF results" tabindex="0">
     <table class="results-table">
       <thead>
-        <tr><th>Method</th><th>ROI CCC</th><th>ROI PSNR</th><th>ROI SSIM</th><th>Full-image PSNR</th><th>Full-image SSIM</th></tr>
+        <tr>
+          <th>Method</th>
+          <th>Tumor-ROI CCC</th>
+          <th>Tumor-ROI PSNR (dB)</th>
+          <th>Tumor-ROI SSIM</th>
+          <th>Full-image PSNR (dB)</th>
+          <th>Full-image SSIM</th>
+        </tr>
       </thead>
       <tbody>
-        <tr><td>Conditional MeanFlow</td><td>0.92 ± 0.08</td><td>29.57 ± 1.98</td><td>0.94 ± 0.03</td><td>32.09 ± 1.49</td><td>0.92 ± 0.02</td></tr>
-        <tr class="ours"><td><strong>RA-CMF</strong></td><td><strong>0.93 ± 0.09</strong></td><td><strong>31.94 ± 2.64</strong></td><td><strong>0.97 ± 0.03</strong></td><td><strong>34.23 ± 1.71</strong></td><td><strong>0.95 ± 0.01</strong></td></tr>
+        <tr>
+          <td><strong>Raw Input</strong></td>
+          <td>0.51 ± 0.24</td>
+          <td>17.81 ± 1.85</td>
+          <td>0.53 ± 0.13</td>
+          <td>25.21 ± 2.44</td>
+          <td>0.81 ± 0.05</td>
+        </tr>
+        <tr>
+          <td><strong>STAN-CT</strong></td>
+          <td>0.75 ± 0.25</td>
+          <td>25.84 ± 2.35</td>
+          <td>0.92 ± 0.05</td>
+          <td>30.41 ± 1.76</td>
+          <td>0.90 ± 0.03</td>
+        </tr>
+        <tr>
+          <td><strong>RadiomicGAN</strong></td>
+          <td>0.92 ± 0.08</td>
+          <td>27.30 ± 2.79</td>
+          <td>0.912 ± 0.07</td>
+          <td>29.35 ± 1.27</td>
+          <td>0.92 ± 0.02</td>
+        </tr>
+        <tr>
+          <td><strong>CMF</strong></td>
+          <td>0.89 ± 0.15</td>
+          <td>29.57 ± 1.98</td>
+          <td>0.94 ± 0.03</td>
+          <td>32.09 ± 1.49</td>
+          <td>0.90 ± 0.01</td>
+        </tr>
+        <tr class="ours">
+          <td><strong>RA-CMF (Ours)</strong></td>
+          <td><strong>0.93 ± 0.09</strong></td>
+          <td><strong>31.94 ± 2.64</strong></td>
+          <td><strong>0.97 ± 0.03</strong></td>
+          <td><strong>34.23 ± 1.71</strong></td>
+          <td><strong>0.95 ± 0.01</strong></td>
+        </tr>
       </tbody>
     </table>
   </div>
+  <p class="table-note">Values are reported as mean ± standard deviation. Higher values indicate better agreement or reconstruction quality.</p>
 
   <div class="story-bridge">
     <p><strong>The result changed the next question for me.</strong> Once the reconstruction model had learned where the image is difficult and how the image changes along its trajectory, I wanted to know whether that internal information could become a useful representation of the CT itself.</p>
