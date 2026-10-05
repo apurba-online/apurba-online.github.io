@@ -3,7 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" type="image/png" href="assets/img/root/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/root/favicon.png">
   <meta name="description" content="The current research story of Md Shifatul Ahsan Apurba: from CT reconstruction with Conditional MeanFlow and RA-CMF to image representation learning, multimodal prediction, and early lung cancer detection.">
+  <meta property="og:title" content="Current Research | Md Shifatul Ahsan Apurba">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://apurba-online.github.io/assets/img/papers/CMF_BB_V1.jpg">
+  <meta property="og:url" content="https://apurba-online.github.io/research.html">
+  <meta property="og:description" content="The current research story of Md Shifatul Ahsan Apurba: from CT reconstruction with Conditional MeanFlow and RA-CMF to image representation learning, multimodal prediction, and early lung cancer detection.">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="site.css">
   <link rel="stylesheet" href="icons.css">
   <link rel="stylesheet" href="research.css">
@@ -97,7 +105,7 @@
   </div>
 
   <figure class="story-figure">
-    <img src="assets/img/papers/CMF_BB_V1.png" alt="Conditional MeanFlow U-Net architecture used as the global reconstruction backbone." loading="lazy" decoding="async">
+    <img src="assets/img/papers/CMF_BB_V1.jpg" alt="Conditional MeanFlow U-Net architecture used as the global reconstruction backbone." loading="lazy" decoding="async">
     <figcaption><strong>Conditional MeanFlow backbone.</strong> The source image conditions the trajectory while the U-Net predicts the velocity field used to move the current state toward the target reconstruction.</figcaption>
   </figure>
 
@@ -168,7 +176,7 @@
   </div>
 
   <figure class="story-figure">
-    <img src="assets/img/papers/RA-CMF-FIGS-RA-CMF_V3%20(1).png" alt="Complete RA-CMF framework with Conditional MeanFlow reconstruction and region-adaptive reinforcement-learning refinement." loading="lazy" decoding="async">
+    <img src="assets/img/papers/RA-CMF-FIGS-RA-CMF_V3%20(1).jpg" alt="Complete RA-CMF framework with Conditional MeanFlow reconstruction and region-adaptive reinforcement-learning refinement." loading="lazy" decoding="async">
     <figcaption><strong>RA-CMF framework.</strong> A global Conditional MeanFlow reconstruction is followed by an RL controller that selects regions, allocates local refinement effort, manages global budget, and learns when to stop.</figcaption>
   </figure>
 </section>
@@ -233,7 +241,7 @@
   </div>
 
   <figure class="story-figure figure-plain">
-    <img src="assets/img/papers/image.png" alt="Updated qualitative CT reconstruction comparison for RA-CMF and comparison methods." loading="lazy" decoding="async">
+    <img src="assets/img/papers/image.jpg" alt="Updated qualitative CT reconstruction comparison for RA-CMF and comparison methods." loading="lazy" decoding="async">
     <figcaption><strong>Updated qualitative comparison.</strong> Representative reconstruction results comparing the target reference, source input, comparison methods, Conditional MeanFlow, and RA-CMF.</figcaption>
   </figure>
 
